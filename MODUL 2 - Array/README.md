@@ -2,7 +2,6 @@
 <p align="center">Leonardus Ananto Widodo</p>
 
 ## Dasar Teori
-
 	Bahasa pemrograman, atau sering diistilahkan dengan bahasa komputer, merupakan teknik komando atau instruksi standar untuk memerintah komputer. Bahasa pemrograman dapat dimanfaatkan untuk membagun sebuah sistem aplikasi sesuai dengan kebutuhan yang dapat dimanfaatkan dalam berbagai bidang baik dalam bidang pendidikan, ekonomi, bisnis bahkan dalam bidang sosial budaya. Sampai saat ini terdapat banyak jenis bahasa pemrograman. Salah satu di antaranya adalah bahasa pemrograman C++ di mana bahasa pemrograman C++ ini merupakan hybrid dari bahasa C [1] .
 	Array atau larik adalah sebuah variabel yang memiliki serangkaian elemen dari jenis tipe data yang sama. Elemen-elemen tersebut dirangkai di dalam memori yang berdekatan dengan elemen lainnya sehingga mirip seperti struct dan class yang merupakan kumpulan dari variabel. Perbedaannya adalah array merupakan kumpulan dari variabel dengan satu identifier dan satu tipe data yang sama, dan dalam istilah-istilah array dalam kumpulan variabel tersebut adalah elemen. Array juga dapat didefinisikan sebagai kumpulan dari nilai-nilai data bertipe sama dalam urutan tertentu yang menggunakan sebuah nama yang sama. Nilai-nilai data di suatu larik disebut dengan elemen-elemen larik. Letak urutan dari suatu elemen larik ditunjukkan oleh suatu subscipt atau suatu index [2].  
 Menurut dimensinya, array dapat dibedakan menjadi:
