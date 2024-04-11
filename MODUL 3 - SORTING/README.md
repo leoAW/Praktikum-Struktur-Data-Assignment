@@ -505,11 +505,14 @@ Dengan menggunakan vector untuk menyimpan karakter-karakter yang dimasukkan peng
 Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Array menurut dimensi ada 4 yaitu, array satu dimensi, array dua dimensi, array tiga dimensi, dan array multidimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
 
 ## Referensi
-[1] Dewi, L. J. E., "Media Pembelajaran Bahasa Pemrograman C++," Jurnal Pendidikan Teknologi dan Kejuruan, vol. 7, no. 1, 2010.
 
-[2] Huda, A., Ardi, N., and Muabi, A., "Pengantar Coding Berbasis C/C++," UNP PRESS, 2021.
+[1] R. Nasution et al., "Persepsi Mahasiswa Informatika Terhadap Keefektifan Algoritma Bubble Sort dalam Mengurutkan Data," 
+    Blend Sains Jurnal Teknik, vol. 1, no. 3, pp. 220-225, 2023.
 
-[3] FIRLIANA, R. and Kasih, P., "Algoritma dan Pemrograman C++," 2018.
+[2] W. Purbasari et al., "ALGORITMA PEMROGRAMAN," 2024.
 
-[4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
->>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
+[3] Y. A. Sandria et al., "Penerapan Algoritma Selection Sort untuk Melakukan Pengurutan Data dalam Bahasa Pemrograman 
+    PHP," Hello World Jurnal Ilmu Komputer, vol. 1, no. 4, pp. 190-194, 2023.
+
+[4] S. N. B. Tjaru, "Kompleksitas Algoritma Pengurutan Selection Sort dan Insertion Sort," IF2091 STRATEGI ALGORITMIK, pp. 
+    1-5, 2009.
