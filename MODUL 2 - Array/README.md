@@ -87,7 +87,6 @@ Keunggulan Array
 - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit [2].
 - Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program [2].
 
->>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
 Kelemahan Array
 - Efisiensi memori, yang maksudnya berarti array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori [2].
 - Akses data cepat, yang maksudnya berarti dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan [2].
@@ -541,10 +540,7 @@ Kesimpulan:
 <img width="778" alt="![Screenshot 2024-03-29 074828](https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/e9c76004-51b4-457e-93b9-96cfc08620a0)">
 
 ## Kesimpulan
-<<<<<<< HEAD
 
-=======
->>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
 Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Array menurut dimensi ada 4 yaitu, array satu dimensi, array dua dimensi, array tiga dimensi, dan array multidimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
 
 ## Referensi
@@ -554,8 +550,4 @@ Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan d
 
 [3] FIRLIANA, R. and Kasih, P., "Algoritma dan Pemrograman C++," 2018.
 
-<<<<<<< HEAD
 [4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
-=======
-[4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
->>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
