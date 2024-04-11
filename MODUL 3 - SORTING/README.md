@@ -6,8 +6,8 @@
 	Pengurutan data atau “sorting” adalah proses menyusun kembali data yang sebelumnya telah tersusun secara acak 
 hingga tersusun secara teratur menurut aturan tertentu. Data ini biasanya bertipe numerik dan karakter.Pengurutan data 
 memiliki banyak  fungsi  dalam  sistem.  Data yang  diurutkan  mudah  dicari dan mudah diperiksa  jika  terjadi  kesalahan  
-mudah diperbaiki.  Data  yang  diurutkan  dengan  baik  juga  mudah  dihapus  jika terkadang  data  tidak  lagi  
-diperlukan.  Selain  itu, dengan memilah data, kita akan lebih mudah memasukkan data atau lakukan penggabungan. Pengurutan 
+mudah diperbaiki.  Data  yang  diurutkan  dengan  baik  juga  mudah  dihapus  jika terkadang  data  tidak  lagi diperlukan. 
+Selain  itu, dengan memilah data, kita akan lebih mudah memasukkan data atau lakukan penggabungan. Pengurutan 
 data merupakan bagian integral dari analisis data.Setiap algoritma dalam perancangan perangkat lunak pasti membutuhkan 
 data, baik data analog maupun data digital. Dimana datanya kebanyakan angka bahkan huruf, maka akan dikelola untuk 
 menjadikannya hasil yang diinginkan [1].
@@ -23,21 +23,24 @@ Berikut ini ada 3 metode sorting yang digunakan pada praktikum algoritma dan str
 
 **1. Bubble Sort**
 
-	Bubble Sort  adalah  metode  pengurutan  data  dengan  cara  menukar  data  pada  data  pertama  dan  data  pada  
-data  pertama tetap  duduk  di  sebelahnya  sampai Anda  yakin  tidak  akan  ada  lagi  perubahan  atau  pertukaran  dalam  
+	Bubble Sort  adalah  metode  pengurutan  data  dengan  cara  menukar  data  pada  data  pertama  dan  data  pada 
+ data  pertama tetap  duduk  di  sebelahnya  sampai Anda  yakin  tidak  akan  ada  lagi  perubahan  atau  pertukaran  dalam 
 iterasi  tertentu. Algoritma menggunakan perbandingan dalam operasi antar elemen. Algoritma bubble sort adalah algoritma 
 pengurutan yang  paling  dasar,  dan  metode  pengurutan  juga  yang  paling  sederhana  daripada  algoritma  pengurutan  
-lainnya.Proses pencarian solusi dilakukan secara brute force, direct to the point, yaitu. Bandingkan elemen dalam 
-tabel.Algoritma bubble sort adalah proses penyortiran yang secara bertahap memindahkan data ke lokasi yang benar. Karena 
-itulah algoritma ini disebut  “bubble”  atau  jika  diterjemahkan  ke  dalam  bahasa  Indonesia  Gelembung. Fungsi  dari  
+lainnya.Proses pencarian solusi dilakukan secara brute force, direct to the point, yaitu. Bandingkan elemen dalam tabel. 
+Algoritma bubble sort adalah proses penyortiran yang secara bertahap memindahkan data ke lokasi yang benar. Karena itulah 
+algoritma ini disebut  “bubble”  atau  jika  diterjemahkan  ke  dalam  bahasa  Indonesia  Gelembung. Fungsi  dari  
 algoritma  ini  adalah mengurutkan  data  dari  kecil  ke  besar  (ascending)  atau  sebaliknya  (menurun) [1].  Berikut  
 syarat  dan  langkah yang  harus diperhatikan sebelum kita memulai proses produksi.
 
 Metode pengurutan gelembung
 
 • Jumlah iterasi sama dengan jumlah angka dikurangi 1.
+
 • Pada setiap iterasi, jumlah swap sama dengan jumlah digit.
+
 • Pada algoritma bubble sort, meskipun deretan angka telah diurutkan, proses pengurutan akan tetap berjalan.
+
 • Tidak ada perbedaan metode yang signifikan antara teknik algoritma bubble sort ascending dan descending.
 
 	Untuk mempelajari algoritma bubble sort, kita hanya perlu memahami metode yang digunakan untuk mengurutkan 
@@ -47,15 +50,19 @@ kontra algoritma pengurutan gelembung. Kedua hal ini menjadi pertimbangan progra
 	Berikut adalah beberapa keuntungan yang dimiliki algoritma Bubble Sort
  
 • Algoritma ini adalah metode paling sederhana untuk mengurutkan data.
+
 • Bubble Sort adalah algoritma yang mudah dipahami.
+
 • Sedangkan kekurangan dari algoritma Bubble Sort adalah sebagai berikut.
+
 • Tingkat efisiensinya yang kurang. Bubble Sort ini merupakan metode pengurutan yang tidak efisien, khususnya ketika 	 
   menangani  data  yang  jumlahnya  besar.  Hal  ini  karena  ketika  mengurutkan  data  yang  sangat  besar  akan sangat 
   lambat prosesnya.
+  
 • Jumlah pengulangan yang dilakukan oleh algoritma ini akan tetap sama jumlahnya meskipun data yang diurutkan sudah cukup 
   terurut.
 
-Dengan beberapa faktor di atas, kita dapat menyesuaikan saat kapan sebaiknya algoritma Bubble Sort ini digunakan.
+Dengan beberapa faktor di atas, kita dapat menyesuaikan saat kapan sebaiknya algoritma Bubble Sort ini digunakan [1].
 
 **2. Insertion Sort**
 
@@ -66,13 +73,15 @@ yang baru dan elemen sisanya dapat berbagi tempat di array, meskipun cukup rumit
 menggunakan pengurutan di tempat yang membandingkan elemen saat itu dengan elemen sebelumnya yang sudah diurut, lalu 
 menukarnya terus sampai posisinya tepat. Hal ini terus dilakukan sampai tidak ada elemen tersisa diinput. Seperti sudah 
 dibahas di bagian pendahuluan, salah satu implementasinya pada kehidupan sehari-hari adalah saat kita mengurutkan kartu 
-remi. Kita ambil kartu satu per satu lalu membandingkan dengan kartu sebelumnya untuk mencari posisi yang tepat.
+remi. Kita ambil kartu satu per satu lalu membandingkan dengan kartu sebelumnya untuk mencari posisi yang tepat [4].
 
 	Variasi pada umumnya yang dilakukan terhadap array pada insertion sort adalah sebagai berikut:
  
 • Elemen awal di masukkan sembarang, lalu elemen berikutnya dimasukkan di bagian paling akhir.
+
 • Elemen tersebut dibandingkan dengan elemen ke (x-1). Bila belum terurut posisi elemen sebelumnya digeser sekali ke kanan 
   terus sampai elemen yang sedang diproses menemukan posisi yang tepat atau sampai elemen pertama.
+  
 • Setiap pergeseran akan mengganti nilai elemen berikutnya, namun hal ini tidak menjadi persoalan sebab elemen berikutnya 
   sudah diproses lebih dahulu.
 
@@ -83,10 +92,12 @@ remi. Kita ambil kartu satu per satu lalu membandingkan dengan kartu sebelumnya 
 	Cara kerja algoritma selection sort yaitu:
  
 • Mencari nilai minimum (jika ascending) atau maksimum (jika descending) dalam sebuah list
+
 • Menukarkan nilai ini dengan elemen pertama list
+
 • Mengulangi langkah di atas untuk sisa list dengan dimulai pada posisi kedua.
 
-	Secara efisien kita membagi list menjadi dua bagian yaitu bagian yang sudah diurutkan, yang didapat dengan membangun dari kiri ke kanan dan dilakukan pada saat awal, dan bagian list yang elemennya akan diurutkan.
+	Secara efisien kita membagi list menjadi dua bagian yaitu bagian yang sudah diurutkan, yang didapat dengan membangun dari kiri ke kanan dan dilakukan pada saat awal, dan bagian list yang elemennya akan diurutkan [4].
 
 ## Guided 
 
