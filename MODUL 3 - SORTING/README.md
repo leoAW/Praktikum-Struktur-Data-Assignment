@@ -1,98 +1,62 @@
-# <h1 align="center">Laporan Praktikum Modul Tipe Data</h1>
+# <h1 align="center">Laporan Praktikum Modul Tipe Sorting</h1>
 <p align="center">Leonardus Ananto Widodo</p>
 
 ## Dasar Teori
-<<<<<<< HEAD
 
-Bahasa pemrograman, atau sering diistilahkan dengan bahasa komputer, merupakan teknik komando atau instruksi standar untuk memerintah komputer. Bahasa pemrograman dapat dimanfaatkan untuk membagun sebuah sistem aplikasi sesuai dengan kebutuhan yang dapat dimanfaatkan dalam berbagai bidang baik dalam bidang pendidikan, ekonomi, bisnis bahkan dalam bidang sosial budaya. Sampai saat ini terdapat banyak jenis bahasa pemrograman. Salah satu di antaranya adalah bahasa pemrograman C++ di mana bahasa pemrograman C++ ini merupakan hybrid dari
-bahasa C [1] .
+	Pengurutan data atau “sorting” adalah proses menyusun kembali data yang sebelumnya telah tersusun secara acak hingga tersusun secara teratur menurut aturan tertentu. Data ini biasanya bertipe numerik dan karakter.Pengurutan data memiliki banyak  fungsi  dalam  sistem.  Data yang  diurutkan  mudah  dicari dan mudah diperiksa  jika  terjadi  kesalahan  mudah diperbaiki.  Data  yang  diurutkan  dengan  baik  juga  mudah  dihapus  jika terkadang  data  tidak  lagi  diperlukan.  Selain  itu, dengan memilah data, kita akan lebih mudah memasukkan data atau lakukan penggabungan. Pengurutan data merupakan bagian integral dari analisis data.Setiap algoritma dalam perancangan perangkat lunak pasti membutuhkan data, baik data analog maupun data digital. Dimana datanya kebanyakan angka bahkan huruf, maka akan dikelola untuk menjadikannya hasil yang diinginkan [1].
+	Selain itu, pengurutan (sorting) adalah suatu proses di mana elemen-elemen dalam sebuah array atau list diatur ulang dengan tujuan untuk menyusun data dalam urutan tertentu. Urutan ini dapat berupa urutan menaik (ascending) yaitu elemen-elemen disusun dari nilai terkecil ke nilai terbesar, atau urutan menurun (descending) yaitu elemen-elemen disusun dari nilai terbesar ke nilai terkecil. Tujuannya utama dari pengurutan adalah untuk mempermudah pencarian data dan menganalisis data dengan lebih efisien dan dapat membantu meningkatkan kinerja aplikasi komputasi. Pengurutan merupakan salah satu aspek dasar dari pemrograman dan komputasi yang sering kali diabaikan, namun memiliki peran yang sangat penting dalam berbagai aplikasi komputasi [2].  
 
-Array atau larik adalah sebuah variabel yang memiliki serangkaian elemen dari jenis tipe data yang sama. Elemen-elemen tersebut dirangkai di dalam memori yang berdekatan dengan elemen lainnya sehingga mirip seperti struct dan class yang merupakan kumpulan dari variabel. Perbedaannya adalah array merupakan kumpulan dari variabel dengan satu identifier dan satu tipe data yang sama, dan dalam istilah-istilah array dalam kumpulan variabel tersebut adalah elemen. Array juga dapat didefinisikan sebagai kumpulan dari nilai-nilai data bertipe sama dalam urutan tertentu yang menggunakan sebuah nama yang sama. Nilai-nilai data di suatu larik disebut dengan elemen-elemen larik. Letak urutan dari suatu elemen larik ditunjukkan oleh suatu subscipt atau suatu index [2].  
-Menurut dimensinya, array dapat dibedakan menjadi:
+Berikut ini ada 3 metode sorting yang digunakan pada praktikum algoritma dan strukdur data yaitu:
 
-**1. Array Satu Dimensi**
+**1. Bubble Sort**
 
-Array satu dimensi merupakan kumpulan elemen-elemen identik yang tersusun dalam satu baris. Elemen-elemen tersebut boleh sama, tetapi isi dari elemen itu boleh berbeda [3]. Setiap elemen array dapat diakses melalui index secara default yang dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi 1 [2]. Bentuk array satu dimensi ini berupa vektor. 
+	Bubble Sort  adalah  metode  pengurutan  data  dengan  cara  menukar  data  pada  data  pertama  dan  data  pada  data  pertama tetap  duduk  di  sebelahnya  sampai Anda  yakin  tidak  akan  ada  lagi  perubahan  atau  pertukaran  dalam  iterasi  tertentu. Algoritma menggunakan perbandingan dalam operasi antar elemen. Algoritma bubble sort adalah algoritma pengurutan yang  paling  dasar,  dan  metode  pengurutan  juga  yang  paling  sederhana  daripada  algoritma  pengurutan  lainnya.Proses pencarian solusi dilakukan secara brute force, direct to the point, yaitu. Bandingkan elemen dalam tabel.Algoritma bubble sort adalah proses penyortiran yang secara bertahap memindahkan data ke lokasi yang benar. Karena itulah algoritma ini disebut  “bubble”  atau  jika  diterjemahkan  ke  dalam  bahasa  Indonesia  Gelembung. Fungsi  dari  algoritma  ini  adalah mengurutkan  data  dari  kecil  ke  besar  (ascending)  atau  sebaliknya  (menurun) [1].  Berikut  syarat  dan  langkah yang  harus diperhatikan sebelum kita memulai proses produksi.
 
-Deklarasi array: Tipe_array nama_array[indeks] 
+Metode pengurutan gelembung
 
-**2. Array Dua Dimensi**
+• Jumlah iterasi sama dengan jumlah angka dikurangi 1.
+• Pada setiap iterasi, jumlah swap sama dengan jumlah digit.
+• Pada algoritma bubble sort, meskipun deretan angka telah diurutkan, proses pengurutan akan tetap berjalan.
+• Tidak ada perbedaan metode yang signifikan antara teknik algoritma bubble sort ascending dan descending.
 
-Array dua dimensi merupakan array yang terdiri dari m buah baris dan n buah kolom yang bentuknya bisa berupa tabel atau matriks [2]. Jika array satu dimensi hanya terdiri dari sebuah baris dengan beberapa kolom elemen maka array dua dimensi terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe sama. Pendeklarasian array dua dimensi hampir sama dengan pendeklarasian array satu dimensi, kecuali bahwa array dua dimensi terdapat dua jumlah elemen array yang terdapat di dalam kurung siku dan keduanya boleh tidak sama [4]. 
+	Untuk mempelajari algoritma bubble sort, kita hanya perlu memahami metode yang digunakan untuk mengurutkan data.Logikanya  sederhana,  algoritma  menggunakan  perbandingan  dalam  operasi  antar  elemen. terdapatpro  dan  kontraalgoritma pengurutan gelembung. Kedua hal ini menjadi pertimbangan programmer saat menulis program.
 
-Deklarasi array: Tipe_array nama_array[baris][kolom]
+	Berikut adalah beberapa keuntungan yang dimiliki algoritma Bubble Sort
+ 
+• Algoritma ini adalah metode paling sederhana untuk mengurutkan data.
+• Bubble Sort adalah algoritma yang mudah dipahami.
+• Sedangkan kekurangan dari algoritma Bubble Sort adalah sebagai berikut.
+• Tingkat efisiensinya yang kurang. Bubble Sort ini merupakan metode pengurutan yang tidak efisien, khususnya ketika 	 
+  menangani  data  yang  jumlahnya  besar.  Hal  ini  karena  ketika  mengurutkan  data  yang  sangat  besar  akan sangat 
+  lambat prosesnya.
+• Jumlah pengulangan yang dilakukan oleh algoritma ini akan tetap sama jumlahnya meskipun data yang diurutkan sudah cukup 
+  terurut.
 
-**3. Array Tiga Dimensi**
+Dengan beberapa faktor di atas, kita dapat menyesuaikan saat kapan sebaiknya algoritma Bubble Sort ini digunakan.
 
-Array tiga dimensi digunakan untuk mengelola data dalam bentuk 3 dimensi atau tiga sisi, seperti koordinat x, y, dan z dalam koordinat ruang [4]. 
+**2. Insertion Sort**
 
-Deklarasi array: Type_Data Nama_Variabel [index1] [ndex2] [index3]; 
-Misal : int A [3][4][2];
+	Algoritma insertion sort adalah sebuah algoritma sederhana yang cukup efisien untuk mengurutkan sebuah list yang hampir terurut. Algorima ini juga bisa digunakan sebagai bagian dari algoritma yang lebih canggih. Cara kerja algoritma ini adalah dengan mengambil elemen list satu-per-satu dan memasukkannya di posisi yang benar seperti namanya. Pada array, list yang baru dan elemen sisanya dapat berbagi tempat di array, meskipun cukup rumit. Untuk menghemat memori, implementasinya menggunakan pengurutan di tempat yang membandingkan elemen saat itu dengan elemen sebelumnya yang sudah diurut, lalu menukarnya terus sampai posisinya tepat. Hal ini terus dilakukan sampai tidak ada elemen tersisa diinput. Seperti sudah dibahas di bagian pendahuluan, salah satu implementasinya pada kehidupan sehari-hari adalah saat kita mengurutkan kartu remi. Kita ambil kartu satu per satu lalu membandingkan dengan kartu sebelumnya untuk mencari posisi yang tepat.
 
-**4. Array Multidimensi**
+	Variasi pada umumnya yang dilakukan terhadap array pada insertion sort adalah sebagai berikut:
+ 
+• Elemen awal di masukkan sembarang, lalu elemen berikutnya dimasukkan di bagian paling akhir.
+• Elemen tersebut dibandingkan dengan elemen ke (x-1). Bila belum terurut posisi elemen sebelumnya digeser sekali ke kanan 
+  terus sampai elemen yang sedang diproses menemukan posisi yang tepat atau sampai elemen pertama.
+• Setiap pergeseran akan mengganti nilai elemen berikutnya, namun hal ini tidak menjadi persoalan sebab elemen berikutnya 
+  sudah diproses lebih dahulu.
 
-Array multidimensi dapat dianggap sebagai "array dari array" yang artinya array ini memiliki lebih dari satu indeks atau dimensi untuk mengakses elemen-elemennya. Array multidimensi sangat berguna untuk menyimpan data yang memiliki hubungan atau struktur yang kompleks. Sebenarnya array banyak dimensi ini tidak terlalu sering dipakai seperti halnya array satu dimensi, dua dimensi, dan tiga dimensi. Array banyak dimensi ini pada dasarnya sama dengan array sebelimnya kecuali pada jumlah dimensinya [4]. Bentuk pendeklarasian array multidimensi sama saja dengan deklarasi array dimensi satu maupun dimensi dua [2]. 
+**3. Selection Sort**
+	
+	Selection Sort adalah suatu metode pengurutan yang membandingkan elemen yang sekarang dengan elemen berikutnya sampai  ke  elemen  yang  terakhir.  Jika  ditemukan  elemen  lain  yang  lebih  kecil  dari  elemen  sekarang  maka  dicatat posisinya dan  langsung  ditukar.  Metode  selection sort  adalah  melakukan  pemilihan  dari  suatu  nilai  yang  terkecil  dan kemudian menukarnya dengan elemen paling awal, lalu membandingkan dengan elemen yang sekarang dengan elemen berikutnya sampai dengan elemen terakhir, perbandingan dilakukan terus sampai tidak ada lagi pertukaran data [3]. Selection Sort diakui karena kesederhanaan algoritmanya dan performanya lebih bagus daripada algoritma lain yang lebih rumit dalam situasi tertentu [4].
 
-Deklarasi array: Tipe_array nama_array [index1] [index2] ... [indexN]
-Misal : int A [3][4][2][5]; 
+	Cara kerja algoritma selection sort yaitu:
+ 
+• Mencari nilai minimum (jika ascending) atau maksimum (jika descending) dalam sebuah list
+• Menukarkan nilai ini dengan elemen pertama list
+• Mengulangi langkah di atas untuk sisa list dengan dimulai pada posisi kedua.
 
-**Keunggulan dan Kelemahan Array**
-
-Berikut ini merupakan keunggulan dan keelemahan dari array yaitu:
-
-Keunggulan Array
-- Ukuran tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian [2].
-- Memori terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia [2].
-- Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit [2].
-- Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program [2].
-
-=======
-	Bahasa pemrograman, atau sering diistilahkan dengan bahasa komputer, merupakan teknik komando atau instruksi standar untuk memerintah komputer. Bahasa pemrograman dapat dimanfaatkan untuk membagun sebuah sistem aplikasi sesuai dengan kebutuhan yang dapat dimanfaatkan dalam berbagai bidang baik dalam bidang pendidikan, ekonomi, bisnis bahkan dalam bidang sosial budaya. Sampai saat ini terdapat banyak jenis bahasa pemrograman. Salah satu di antaranya adalah bahasa pemrograman C++ di mana bahasa pemrograman C++ ini merupakan hybrid dari bahasa C [1] .
-	Array atau larik adalah sebuah variabel yang memiliki serangkaian elemen dari jenis tipe data yang sama. Elemen-elemen tersebut dirangkai di dalam memori yang berdekatan dengan elemen lainnya sehingga mirip seperti struct dan class yang merupakan kumpulan dari variabel. Perbedaannya adalah array merupakan kumpulan dari variabel dengan satu identifier dan satu tipe data yang sama, dan dalam istilah-istilah array dalam kumpulan variabel tersebut adalah elemen. Array juga dapat didefinisikan sebagai kumpulan dari nilai-nilai data bertipe sama dalam urutan tertentu yang menggunakan sebuah nama yang sama. Nilai-nilai data di suatu larik disebut dengan elemen-elemen larik. Letak urutan dari suatu elemen larik ditunjukkan oleh suatu subscipt atau suatu index [2].  
-Menurut dimensinya, array dapat dibedakan menjadi:
-
-**1. Array Satu Dimensi**
-
-Array satu dimensi merupakan kumpulan elemen-elemen identik yang tersusun dalam satu baris. Elemen-elemen tersebut boleh sama, tetapi isi dari elemen itu boleh berbeda [3]. Setiap elemen array dapat diakses melalui index secara default yang dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi 1 [2]. Bentuk array satu dimensi ini berupa vektor. 
-
-Deklarasi array: Tipe_array nama_array[indeks] 
-
-**2. Array Dua Dimensi**
-
-Array dua dimensi merupakan array yang terdiri dari m buah baris dan n buah kolom yang bentuknya bisa berupa tabel atau matriks [2]. Jika array satu dimensi hanya terdiri dari sebuah baris dengan beberapa kolom elemen maka array dua dimensi terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe sama. Pendeklarasian array dua dimensi hampir sama dengan pendeklarasian array satu dimensi, kecuali bahwa array dua dimensi terdapat dua jumlah elemen array yang terdapat di dalam kurung siku dan keduanya boleh tidak sama [4]. 
-
-Deklarasi array: Tipe_array nama_array[baris][kolom]
-
-**3. Array Tiga Dimensi**
-
-Array tiga dimensi digunakan untuk mengelola data dalam bentuk 3 dimensi atau tiga sisi, seperti koordinat x, y, dan z dalam koordinat ruang [4]. 
-
-Deklarasi array: Type_Data Nama_Variabel [index1] [ndex2] [index3]; 
-Misal : int A [3][4][2];
-
-**4. Array Multidimensi**
-
-Array multidimensi dapat dianggap sebagai "array dari array" yang artinya array ini memiliki lebih dari satu indeks atau dimensi untuk mengakses elemen-elemennya. Array multidimensi sangat berguna untuk menyimpan data yang memiliki hubungan atau struktur yang kompleks. Sebenarnya array banyak dimensi ini tidak terlalu sering dipakai seperti halnya array satu dimensi, dua dimensi, dan tiga dimensi. Array banyak dimensi ini pada dasarnya sama dengan array sebelimnya kecuali pada jumlah dimensinya [4]. Bentuk pendeklarasian array multidimensi sama saja dengan deklarasi array dimensi satu maupun dimensi dua [2]. 
-
-Deklarasi array: Tipe_array nama_array [index1] [index2] ... [indexN]
-Misal : int A [3][4][2][5]; 
-
-**Keunggulan dan Kelemahan Array**
-
-Berikut ini merupakan keunggulan dan keelemahan dari array yaitu:
-
-Keunggulan Array
-- Ukuran tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian [2].
-- Memori terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia [2].
-- Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit [2].
-- Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program [2].
-
->>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
-Kelemahan Array
-- Efisiensi memori, yang maksudnya berarti array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori [2].
-- Akses data cepat, yang maksudnya berarti dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan [2].
-- Sederhana, yang maksudnya berarti penggunaannya relatif sederhana dan mudah dipahami[5].
-- Fleksibel, yang maksudnya berarti array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks [2].
+	Secara efisien kita membagi list menjadi dua bagian yaitu bagian yang sudah diurutkan, yang didapat dengan membangun dari kiri ke kanan dan dilakukan pada saat awal, dan bagian list yang elemennya akan diurutkan.
 
 ## Guided 
 
@@ -541,10 +505,7 @@ Kesimpulan:
 <img width="778" alt="![Screenshot 2024-03-29 074828](https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/e9c76004-51b4-457e-93b9-96cfc08620a0)">
 
 ## Kesimpulan
-<<<<<<< HEAD
 
-=======
->>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
 Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Array menurut dimensi ada 4 yaitu, array satu dimensi, array dua dimensi, array tiga dimensi, dan array multidimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
 
 ## Referensi
@@ -554,8 +515,5 @@ Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan d
 
 [3] FIRLIANA, R. and Kasih, P., "Algoritma dan Pemrograman C++," 2018.
 
-<<<<<<< HEAD
-[4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
-=======
 [4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
 >>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
