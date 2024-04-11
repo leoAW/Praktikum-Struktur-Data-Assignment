@@ -502,7 +502,7 @@ Dengan menggunakan vector untuk menyimpan karakter-karakter yang dimasukkan peng
 
 ## Kesimpulan
 
-Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Array menurut dimensi ada 4 yaitu, array satu dimensi, array dua dimensi, array tiga dimensi, dan array multidimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
+Kesimpulannya, algortima sorting adalah cara pengurutan yang ada pada bahasa pemrograman. Ada beberapa jenis sorting, yaitu bubble sort, selection sort, dan insertion sort. Bubble sort adalah pengurutan dengan cara membandingkan elemen berdekatan dan menukarnya jika belum terurut, dilakukan beberapa kali sampai semua terurut. Selection sort adalah pengurutan dengan elemen pertama, dan ulangi proses sampai semua terurut. Selection sort adalah pengurutan dengan cara mencari posisis yang tepat untuk elemen tersebut. Pengurutan juga punya dua jenis yaitu ascending yaitu pengurutan dari kecil ke besar dan descending yaitu pengurutan dari besar ke kecil. Kompleksitas waktu adalah waktu yang dibutuhkan oleh suatu algoritma untuk menyelesaikan suatu tugas. Ada beberapa jenis kompleksitas waktu yaitu konstan (O(1)), linear (O(N)), logaritmik (O(log N)), kuadrat (O(N²)), eksponensial (O(²N).
 
 ## Referensi
 
