@@ -2,6 +2,7 @@
 <p align="center">Leonardus Ananto Widodo</p>
 
 ## Dasar Teori
+<<<<<<< HEAD
 
 Bahasa pemrograman, atau sering diistilahkan dengan bahasa komputer, merupakan teknik komando atau instruksi standar untuk memerintah komputer. Bahasa pemrograman dapat dimanfaatkan untuk membagun sebuah sistem aplikasi sesuai dengan kebutuhan yang dapat dimanfaatkan dalam berbagai bidang baik dalam bidang pendidikan, ekonomi, bisnis bahkan dalam bidang sosial budaya. Sampai saat ini terdapat banyak jenis bahasa pemrograman. Salah satu di antaranya adalah bahasa pemrograman C++ di mana bahasa pemrograman C++ ini merupakan hybrid dari
 bahasa C [1] .
@@ -45,6 +46,48 @@ Keunggulan Array
 - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit [2].
 - Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program [2].
 
+=======
+	Bahasa pemrograman, atau sering diistilahkan dengan bahasa komputer, merupakan teknik komando atau instruksi standar untuk memerintah komputer. Bahasa pemrograman dapat dimanfaatkan untuk membagun sebuah sistem aplikasi sesuai dengan kebutuhan yang dapat dimanfaatkan dalam berbagai bidang baik dalam bidang pendidikan, ekonomi, bisnis bahkan dalam bidang sosial budaya. Sampai saat ini terdapat banyak jenis bahasa pemrograman. Salah satu di antaranya adalah bahasa pemrograman C++ di mana bahasa pemrograman C++ ini merupakan hybrid dari bahasa C [1] .
+	Array atau larik adalah sebuah variabel yang memiliki serangkaian elemen dari jenis tipe data yang sama. Elemen-elemen tersebut dirangkai di dalam memori yang berdekatan dengan elemen lainnya sehingga mirip seperti struct dan class yang merupakan kumpulan dari variabel. Perbedaannya adalah array merupakan kumpulan dari variabel dengan satu identifier dan satu tipe data yang sama, dan dalam istilah-istilah array dalam kumpulan variabel tersebut adalah elemen. Array juga dapat didefinisikan sebagai kumpulan dari nilai-nilai data bertipe sama dalam urutan tertentu yang menggunakan sebuah nama yang sama. Nilai-nilai data di suatu larik disebut dengan elemen-elemen larik. Letak urutan dari suatu elemen larik ditunjukkan oleh suatu subscipt atau suatu index [2].  
+Menurut dimensinya, array dapat dibedakan menjadi:
+
+**1. Array Satu Dimensi**
+
+Array satu dimensi merupakan kumpulan elemen-elemen identik yang tersusun dalam satu baris. Elemen-elemen tersebut boleh sama, tetapi isi dari elemen itu boleh berbeda [3]. Setiap elemen array dapat diakses melalui index secara default yang dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi 1 [2]. Bentuk array satu dimensi ini berupa vektor. 
+
+Deklarasi array: Tipe_array nama_array[indeks] 
+
+**2. Array Dua Dimensi**
+
+Array dua dimensi merupakan array yang terdiri dari m buah baris dan n buah kolom yang bentuknya bisa berupa tabel atau matriks [2]. Jika array satu dimensi hanya terdiri dari sebuah baris dengan beberapa kolom elemen maka array dua dimensi terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe sama. Pendeklarasian array dua dimensi hampir sama dengan pendeklarasian array satu dimensi, kecuali bahwa array dua dimensi terdapat dua jumlah elemen array yang terdapat di dalam kurung siku dan keduanya boleh tidak sama [4]. 
+
+Deklarasi array: Tipe_array nama_array[baris][kolom]
+
+**3. Array Tiga Dimensi**
+
+Array tiga dimensi digunakan untuk mengelola data dalam bentuk 3 dimensi atau tiga sisi, seperti koordinat x, y, dan z dalam koordinat ruang [4]. 
+
+Deklarasi array: Type_Data Nama_Variabel [index1] [ndex2] [index3]; 
+Misal : int A [3][4][2];
+
+**4. Array Multidimensi**
+
+Array multidimensi dapat dianggap sebagai "array dari array" yang artinya array ini memiliki lebih dari satu indeks atau dimensi untuk mengakses elemen-elemennya. Array multidimensi sangat berguna untuk menyimpan data yang memiliki hubungan atau struktur yang kompleks. Sebenarnya array banyak dimensi ini tidak terlalu sering dipakai seperti halnya array satu dimensi, dua dimensi, dan tiga dimensi. Array banyak dimensi ini pada dasarnya sama dengan array sebelimnya kecuali pada jumlah dimensinya [4]. Bentuk pendeklarasian array multidimensi sama saja dengan deklarasi array dimensi satu maupun dimensi dua [2]. 
+
+Deklarasi array: Tipe_array nama_array [index1] [index2] ... [indexN]
+Misal : int A [3][4][2][5]; 
+
+**Keunggulan dan Kelemahan Array**
+
+Berikut ini merupakan keunggulan dan keelemahan dari array yaitu:
+
+Keunggulan Array
+- Ukuran tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian [2].
+- Memori terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia [2].
+- Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit [2].
+- Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program [2].
+
+>>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
 Kelemahan Array
 - Efisiensi memori, yang maksudnya berarti array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori [2].
 - Akses data cepat, yang maksudnya berarti dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan [2].
@@ -498,7 +541,10 @@ Kesimpulan:
 <img width="778" alt="![Screenshot 2024-03-29 074828](https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/e9c76004-51b4-457e-93b9-96cfc08620a0)">
 
 ## Kesimpulan
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
 Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Array menurut dimensi ada 4 yaitu, array satu dimensi, array dua dimensi, array tiga dimensi, dan array multidimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
 
 ## Referensi
@@ -508,4 +554,8 @@ Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan d
 
 [3] FIRLIANA, R. and Kasih, P., "Algoritma dan Pemrograman C++," 2018.
 
+<<<<<<< HEAD
 [4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
+=======
+[4] Pratama, M. A., "STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++," 2020.
+>>>>>>> 64ba83fcea545edf64b2ea2af527a2f8f5185eb7
