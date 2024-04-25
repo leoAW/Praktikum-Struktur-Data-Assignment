@@ -2,14 +2,17 @@
 <p align="center">Leonardus Ananto Widodo</p>
 
 ## Dasar Teori
+
 Searching (pencarian) adalah struktur data yang mengacu pada proses algoritmik untuk memeriksa, menemukan, mengambil posisi elemen tertentu (target) dari kumpulan elemen di dalam struktur data [1]. Kumpulan elemen dapat berupa array, list, linked  list, tree, dan lain sebagainya. Hasil pencariannya yaitu salah satu dari tiga keadaan, seperti data ditemukan, data ditemukan lebih dari satu, atau data tidak ditemukan. Berdasarkan jenis operasinya, terdapat dua algoritma searching (pencarian), yaitu: 
 
 **1. Sequential Search**
+
 Sequential Search (pencarian berurutan) dikenal juga sebagai linear search (pencarian linier). Sequential Search merupakan algoritma pencarian paling dasar dan paling sederhana yang bekerja menggunakan pendekatan brute force, mencoba segala kemungkinan yang ada hingga target yang diinginkan ditemukan [1]. Sebagai contoh, mencari nilai 36 dari data array {12, 7, 30, 28, 2, 19, 36, 21, 16, 9}. Sequential  Search dimulai dengan membandingkan/mencocokkan 36 dengan elemen pertama/index[0] yaitu 12, karena 12 tidak sesuai dengan kriteria  pencarian (12 != 36) maka dilanjutkan dengan membandingkan 36 dengan elemen berikutnya hingga ditemukan elemen yang cocok, yaitu pada index[6] dimana 36 == 36 
 
 Pencarian Linear juga didefinisikan sebagai algoritma pencarian berurutan yang dimulai di satu ujung dan melewati  setiap elemen daftar sampai elemen yang diinginkan ditemukan, jika tidak, pencarian berlanjut hingga akhir kumpulan data. Algoritma pencarian linier dianggap yang paling dasar dari semua algoritma pencarian. Contoh algoritma pencarian linier yang terbaik mungkin adalah pencarian biner. Ada algoritma pencarian lain seperti algoritma pencarian depth-first, algoritma breadth-first, dll. Efisiensi algoritma pencarian diukur dengan berapa  kali perbandingan kunci pencarian dilakukan dalam kasus terburuk. Notasi yang digunakan dalam algoritma pencarian adalah O (n), di mana n adalah jumlah perbandingan yang dilakukan. Hal ini memberikan gagasan tentang batas atas asimtotik waktu eksekusi yang diperlukan untuk algoritma sehubungan dengan kondisi tertentu  [2]. 
 
 **2. Binary Search**
+
 Pencarian bagi dua (binary search) adalah proses pencarian dengan membagi dua bagian data kemudian membandingkan  isi data bagian pertama atau bagian kedua dengan data yang akan dicari. Pada metode ini membutuhkan nilai indeks terkecil dan terbesar untuk dijumlahkan kemudian dibagi dua. Pencarian bagi dua (binary search) hanya bisa dilakukan  pada data yang sudah terurut. Metode ini lebih efisien dibandingkan dengan metode pencarian sequential search atau pencarian beruntun. Pencarian Biner sebagai algoritma pencarian yang digunakan dalam array yang diurutkan dengan berulang kali membagi interval pencarian menjadi dua. Ide pencarian biner adalah menggunakan informasi bahwa array  diurutkan dan mengurangi kompleksitas waktu ke O (log N) [2].
 
 Algoritma Binary Search bekerja dengan menggunakan pendekatan devide and conquerpada data array yang sudah terurut (sorted), artinya algoritma Binary Search diawali dengan mengurutkan (sorting) array terlebih dahulu sebelum melakukan proses pencarian (Goodrich et  al, 2014). Setelah data array terurut proses pencarian dimulai dengan perulangan pertama untuk mencari elemen yang posisinya berada di tengah array, kemudian membandingkan elemen tengah tersebut dengan kunci  pencarian, jika kunci pencarian lebih besar dari elemen tengah, maka abaikan semua elemen array yang berada di posisi kiri lanjutkan perulangan kedua dengan mencari elemen tengah pada array sisi kanan saja dan dibandingkan lagi dengan kunci  pencarian. Namun apabila kunci pencarian lebih kecil dari elemen tengah maka abaikan semua elemen array di posisi kanan dan lanjutkan perulangan kedua dengan mencari elemen tengah pada array sisi kiri lalu bandingkan dengan kunci pencarian. Langkah-langkah ini dilakukan berulang sampai dengan ditemukan elemen tengah yang sama dengan kunci pencarian atau elemen  telah habis dibandingkan [1].
@@ -62,7 +65,7 @@ Kode program di atas merupakan implementasi dari algoritma Sequential Search unt
 Dengan menggunakan algoritma Sequential Search, program ini mencari nilai yang diinginkan dalam array dengan cara memeriksa setiap elemen satu per satu hingga nilai tersebut ditemukan atau sampai akhir array.
 
 ### Output
-<img width="780" alt="![Screenshot 2024-04-25 225608]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/59a4e3a2-05f5-40c4-ae9a-9267a300d76d)">
+<img width="780" alt="Screenshot 2024-04-25 225608" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/59a4e3a2-05f5-40c4-ae9a-9267a300d76d">
 
 ### 2. Buatlah sebuah project untuk melakukan pencarian data dengan menggunakan Binary Search!
 
