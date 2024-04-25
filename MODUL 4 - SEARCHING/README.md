@@ -168,7 +168,7 @@ Kode program di atas merupakan implementasi dari algoritma Binary Search untuk m
 Dengan menggunakan algoritma Selection Sort untuk mengurutkan array dan algoritma Binary Search untuk mencari nilai dalam array yang telah diurutkan, program ini memungkinkan pengguna untuk melakukan pencarian efisien dalam array.
 
 ### Output
-<img width="780" alt="![Screenshot 2024-04-25 230125]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/a5395e3c-e026-45ec-b99f-fc1ad7633a1c)">
+<img width="780" alt="Screenshot 2024-04-25 230125" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/a5395e3c-e026-45ec-b99f-fc1ad7633a1c">
 
 ## Unguided 
 
@@ -240,7 +240,7 @@ Dengan menggunakan algoritma Binary Search yang dimodifikasi, program ini memung
 
 
 #### Output:
-<img width="694" alt="![Screenshot 2024-04-25 230741]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/acae880d-e6a8-4b62-9b4f-7d4c10bc2fbf)">
+<img width="694" alt="Screenshot 2024-04-25 230741" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/acae880d-e6a8-4b62-9b4f-7d4c10bc2fbf">
 
 ### 2. Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!
 
@@ -304,8 +304,7 @@ Kode program di atas merupakan program sederhana yang menghitung jumlah huruf vo
 Dengan menggunakan program ini, pengguna dapat dengan mudah menghitung jumlah huruf vokal dalam sebuah kalimat dan melihat indeks dari huruf vokal tersebut. Program ini juga dapat dijadikan contoh penggunaan vektor untuk menyimpan indeks-indeks yang ditemukan selama proses perhitungan.
 
 ### Output
-<img width="777" alt="![Screenshot 2024-04-25 231037]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885)">
-
+<img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
@@ -363,7 +362,7 @@ Kode program di atas adalah program sederhana yang menggunakan Sequential Search
 Dengan menggunakan program ini, pengguna dapat dengan mudah menghitung jumlah kemunculan sebuah angka tertentu dalam vektor bilangan bulat menggunakan Sequential Search. Program ini juga dapat dijadikan contoh penggunaan vektor dalam pemrograman C++ untuk menyimpan data dan hasil perhitungan.
 
 ### Output
-<img width="778" alt="![Screenshot 2024-04-25 231217]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/eb4f87d9-5bfd-4feb-8278-2ea6b90943b4)">
+<img width="778" alt="Screenshot 2024-04-25 231217" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/eb4f87d9-5bfd-4feb-8278-2ea6b90943b4">
 
 ## Kesimpulan
 Algoritma searching adalah proses menemukan sebuah data yang diinginkan dalam sebuah kumpulan data. Berdasarkan jenis operasinya, terdapat dua algoritma searching (pencarian), yaitu binary search dan sequential search. Binary search merupakan pencarian dengan membagi array atau list menjadi dua bagian secara berulang dan membandingkan elemen yang dicari dengan elemen tengah. Sedangkan sequential search atau dapat disebut juga dengan linear search merupakan pencarian dengan membandingkan elemen yang dicari dengan setiap elemen dalam array secara berurutan.
