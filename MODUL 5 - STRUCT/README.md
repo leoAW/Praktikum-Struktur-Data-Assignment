@@ -405,7 +405,7 @@ Deklarasi variabel struct Buku pada program tersebut adalah berjenis array dari 
 1) Menggunakan perulangan (`for` loop) untuk menampilkan setiap buku di variabel `BukuNovel`.
 2) Meng titik (.) untuk mengakses elemen dari structBukuNovel`.
 3) Contoh:
-   ```C++
+```C++
   for (int i=0; i<5; i++){
       cout << "\n\tBuku Novel ke-" << i+1 << endl;
       cout << "\tJudul Buku          : "      << BukuNovel.judul_buku[i] << endl;
@@ -414,13 +414,16 @@ Deklarasi variabel struct Buku pada program tersebut adalah berjenis array dari 
       cout << "\tTebal Halaman       : "      << BukuNovel.tebal_halaman[i] << endl;
       cout << "\tHarga Buku          : Rp "   << BukuNovel.harga_buku[i] << endl;
   }
+```
 
 Dengan cara ini, variabel struct BukuNovel diisi dengan data buku-buku novel dan kemudian ditampilkan menggunakan perulangan, sehingga informasi setiap buku dapat divisualisasikan di akhir program.
 
 ### Output
-<img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
+<img width="694" alt="Screenshot 2024-05-02 084724" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/1d77dac2-8939-40fd-a7f8-ad1158e60010">
 
-<img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
+<img width="694" alt="Screenshot 2024-05-02 084735" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/06f05fcb-c397-4250-be21-76e01b572cfd">
+
+Program ini membantu dalam menyimpan dan menampilkan informasi tentang beberapa buku novel terkenal di Indonesia menggunakan struct dan array di dalam bahasa pemrograman C++
 
 ## Kesimpulan
 
