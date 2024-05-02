@@ -2,17 +2,38 @@
 <p align="center">Leonardus Ananto Widodo</p>
 
 ## Dasar Teori
-Searching (pencarian) adalah struktur data yang mengacu pada proses algoritmik untuk memeriksa, menemukan, mengambil posisi elemen tertentu (target) dari kumpulan elemen di dalam struktur data [1]. Kumpulan elemen dapat berupa array, list, linked  list, tree, dan lain sebagainya. Hasil pencariannya yaitu salah satu dari tiga keadaan, seperti data ditemukan, data ditemukan lebih dari satu, atau data tidak ditemukan. Berdasarkan jenis operasinya, terdapat dua algoritma searching (pencarian), yaitu: 
+**1. Struct**
+Struct adalah tipe data bentukan yang berisi kumpulan variabel-variabel yang bernaung dalam satu nama yang sama dan memiliki kaitan satu sama lain. Berbeda dengan array hanya berupa kumpulan variabel yang bertipe data sama, struct bisa memiliki variabel-variabel yang bertipe data sama atau berbeda, bahkan bisa menyimpan variabel yang bertipe data array atau struct itu sendiri [1]. Variabel-variabel yang menjadi anggota struct ini disebut dengan elemen struct. Selain itu, struct yaitu koleksi dari variabel yang dinyatakan dengan sebuah nama, dengan sifat setiap variabel dapat memiliki tipe yang berlainan. Struct biasanya sering dipakai untuk mengelompokkan beberapa informasi yang berkaitan menjadi sebuah satu kesatuan [2]. 
 
-**1. Sequential Search**
-Sequential Search (pencarian berurutan) dikenal juga sebagai linear search (pencarian linier). Sequential Search merupakan algoritma pencarian paling dasar dan paling sederhana yang bekerja menggunakan pendekatan brute force, mencoba segala kemungkinan yang ada hingga target yang diinginkan ditemukan [1]. Sebagai contoh, mencari nilai 36 dari data array {12, 7, 30, 28, 2, 19, 36, 21, 16, 9}. Sequential  Search dimulai dengan membandingkan/mencocokkan 36 dengan elemen pertama/index[0] yaitu 12, karena 12 tidak sesuai dengan kriteria  pencarian (12 != 36) maka dilanjutkan dengan membandingkan 36 dengan elemen berikutnya hingga ditemukan elemen yang cocok, yaitu pada index[6] dimana 36 == 36 
+Array dan struct mempunyai persamaan serta perbedaan. Persamaan antara array dan struct adalah alokasi memori untuk elemen - elemennya sudah ditentukan sebelum program dijalankan (statis). Sedangkan perbedaan antara array dengan struct adalah sebagai berikut [3]:
+1) Array adalah struktur data yang tipe data dari elemen - elemennya sama (homogen) dan elemen - elemennya          diakses atau diidentifikasi menggunakan index.
+2) Struct adalah struktur data yang tipe data dari elemen - elemennya boleh tidak sama (heterogen) dan elemen –     elemennya diakses atau diidentifikasi menggunakan identifier atau nama variabel.
 
-Pencarian Linear juga didefinisikan sebagai algoritma pencarian berurutan yang dimulai di satu ujung dan melewati  setiap elemen daftar sampai elemen yang diinginkan ditemukan, jika tidak, pencarian berlanjut hingga akhir kumpulan data. Algoritma pencarian linier dianggap yang paling dasar dari semua algoritma pencarian. Contoh algoritma pencarian linier yang terbaik mungkin adalah pencarian biner. Ada algoritma pencarian lain seperti algoritma pencarian depth-first, algoritma breadth-first, dll. Efisiensi algoritma pencarian diukur dengan berapa  kali perbandingan kunci pencarian dilakukan dalam kasus terburuk. Notasi yang digunakan dalam algoritma pencarian adalah O (n), di mana n adalah jumlah perbandingan yang dilakukan. Hal ini memberikan gagasan tentang batas atas asimtotik waktu eksekusi yang diperlukan untuk algoritma sehubungan dengan kondisi tertentu  [2]. 
+a. Bentuk umum :
 
-**2. Binary Search**
-Pencarian bagi dua (binary search) adalah proses pencarian dengan membagi dua bagian data kemudian membandingkan  isi data bagian pertama atau bagian kedua dengan data yang akan dicari. Pada metode ini membutuhkan nilai indeks terkecil dan terbesar untuk dijumlahkan kemudian dibagi dua. Pencarian bagi dua (binary search) hanya bisa dilakukan  pada data yang sudah terurut. Metode ini lebih efisien dibandingkan dengan metode pencarian sequential search atau pencarian beruntun. Pencarian Biner sebagai algoritma pencarian yang digunakan dalam array yang diurutkan dengan berulang kali membagi interval pencarian menjadi dua. Ide pencarian biner adalah menggunakan informasi bahwa array  diurutkan dan mengurangi kompleksitas waktu ke O (log N) [2].
+struct <nama_struct> {
+		tipe_data <nama_var>;
+		tipe_data <nama_var>;
+		....
+}
 
-Algoritma Binary Search bekerja dengan menggunakan pendekatan devide and conquerpada data array yang sudah terurut (sorted), artinya algoritma Binary Search diawali dengan mengurutkan (sorting) array terlebih dahulu sebelum melakukan proses pencarian (Goodrich et  al, 2014). Setelah data array terurut proses pencarian dimulai dengan perulangan pertama untuk mencari elemen yang posisinya berada di tengah array, kemudian membandingkan elemen tengah tersebut dengan kunci  pencarian, jika kunci pencarian lebih besar dari elemen tengah, maka abaikan semua elemen array yang berada di posisi kiri lanjutkan perulangan kedua dengan mencari elemen tengah pada array sisi kanan saja dan dibandingkan lagi dengan kunci  pencarian. Namun apabila kunci pencarian lebih kecil dari elemen tengah maka abaikan semua elemen array di posisi kanan dan lanjutkan perulangan kedua dengan mencari elemen tengah pada array sisi kiri lalu bandingkan dengan kunci pencarian. Langkah-langkah ini dilakukan berulang sampai dengan ditemukan elemen tengah yang sama dengan kunci pencarian atau elemen  telah habis dibandingkan [1].
+b. Cara mendeklarasikan Struct
+   
+	struct Mahasiswa {
+	char NIM[8];
+	char nama[50];
+	float ipk;
+   };
+
+   Keterangan deklarasi struct
+    - Untuk menggunakan struct Mahasiswa dengan membuat variabel mhs dan mhs2
+      Mahasiswa mhs, mhs2;
+    - Untuk menggunakan struct Mahasiswa dengan membuat variabel array m;
+      Mahasiswa m[100];
+
+c. Cara Menggunakan Struct
+Penggunaan/pemakaian tipe data struct dilakukan dengan membuat suatu variabel yang bertipe data struct tersebut. Pengaksesan elemen struct dilakukan secara individual dengan menyebutkan nama variabel struct diikuti dengan operator titik (.) [1].
+
 
 ## Guided 
 
@@ -293,7 +314,7 @@ Selanjutnya, program mendeklarasikan variabel BukuNovel dengan tipe data Buku un
 Setelah data buku diisi, program menggunakan loop for untuk menampilkan informasi dari setiap buku novel yang disimpan dalam variabel BukuNovel. Informasi yang ditampilkan meliputi judul buku, pengarang, penerbit, tebal halaman, dan harga buku.
 
 #### Output:
-<img width="694" alt="![Screenshot 2024-04-25 230741]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/acae880d-e6a8-4b62-9b4f-7d4c10bc2fbf)">
+<img width="694" alt="Screenshot 2024-04-25 230741" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/acae880d-e6a8-4b62-9b4f-7d4c10bc2fbf">
 
 Program ini membantu dalam menyimpan dan menampilkan informasi tentang beberapa buku novel terkenal di Indonesia menggunakan struct dan array di dalam bahasa pemrograman C++
 
@@ -379,14 +400,18 @@ Kode program di atas merupakan program sederhana yang menghitung jumlah huruf vo
 Dengan menggunakan program ini, pengguna dapat dengan mudah menghitung jumlah huruf vokal dalam sebuah kalimat dan melihat indeks dari huruf vokal tersebut. Program ini juga dapat dijadikan contoh penggunaan vektor untuk menyimpan indeks-indeks yang ditemukan selama proses perhitungan.
 
 ### Output
-<img width="777" alt="![Screenshot 2024-04-25 231037]" src="(https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885)">
+<img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
 
 
 
 ## Kesimpulan
-Algoritma searching adalah proses menemukan sebuah data yang diinginkan dalam sebuah kumpulan data. Berdasarkan jenis operasinya, terdapat dua algoritma searching (pencarian), yaitu binary search dan sequential search. Binary search merupakan pencarian dengan membagi array atau list menjadi dua bagian secara berulang dan membandingkan elemen yang dicari dengan elemen tengah. Sedangkan sequential search atau dapat disebut juga dengan linear search merupakan pencarian dengan membandingkan elemen yang dicari dengan setiap elemen dalam array secara berurutan.
+
+Struct adalah sebuah struktur data yang memungkinkan terjadinya pembentukan tipe data baru dengan menggabungkan antara berbagai macam variabel dengan tipe data yang berbeda. Struct digunakan untuk membentuk tipe data dengan anggota tertentu, yang dilakukan dengan menentukan anggota-anggotanya. Di dalam struct terdapat variabel sebagai anggota, setiap anggota struct memiliki nama dan data yang unik. Variabel memiliki dua jenis, yaitu variabel lokal yang dibuat didalam fungsi dan dapat dipanggil oleh fungsi yang mendeklarasikannya, dan variabel global yang dibuat diluar fungsi dan dapat dipanggil oleh semua fungsi yang ada dalam program tersebut.  Selain itu, struct juga mempermudah pembuatan program dengan membuat kode lebih terstruktur dan mudah dibaca. Dengan fleksibilitasnya, struct adalah salah satu fitur yang paling sering digunakan dalam C++ dan bahasa pemrograman lainnya, membantu pengembang dalam membangun program yang lebih efisien dan terstruktur.
 
 ## Referensi
-[1] Putri, M. P., Barovih, G., Azdy, R. A., Yuniansyah, Y., Saputra, A., Sriyeni, Y., et al. "Algoritma dan Struktur Data," 2022.
+[1] T. Triase, "Struktur Data: Diktat Edisi Revisi," 2020.
 
-[2] Yanti, F., & Eriana, E. S. "Algoritma Sorting dan Searching," 2024.
+[2] R. M. S. Anita Sindar, "Struktur Data Dan Algoritma Dengan C++ (Vol. 1)," CV. AA. RIZKY, 2019.
+
+[3] S. Buku Ajar Data, "DATA," 3.
+
