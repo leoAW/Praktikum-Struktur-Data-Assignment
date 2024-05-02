@@ -316,6 +316,7 @@ Setelah data buku diisi, program menggunakan loop for untuk menampilkan informas
 #### Output:
 <img width="694" alt="Screenshot 2024-05-02 084724" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/1d77dac2-8939-40fd-a7f8-ad1158e60010">
 
+<img width="694" alt="Screenshot 2024-05-02 084735" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/06f05fcb-c397-4250-be21-76e01b572cfd">
 
 Program ini membantu dalam menyimpan dan menampilkan informasi tentang beberapa buku novel terkenal di Indonesia menggunakan struct dan array di dalam bahasa pemrograman C++
 
