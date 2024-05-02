@@ -314,7 +314,8 @@ Selanjutnya, program mendeklarasikan variabel BukuNovel dengan tipe data Buku un
 Setelah data buku diisi, program menggunakan loop for untuk menampilkan informasi dari setiap buku novel yang disimpan dalam variabel BukuNovel. Informasi yang ditampilkan meliputi judul buku, pengarang, penerbit, tebal halaman, dan harga buku.
 
 #### Output:
-<img width="694" alt="Screenshot 2024-04-25 230741" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/acae880d-e6a8-4b62-9b4f-7d4c10bc2fbf">
+<img width="694" alt="Screenshot 2024-05-02 084724" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/1d77dac2-8939-40fd-a7f8-ad1158e60010">
+
 
 Program ini membantu dalam menyimpan dan menampilkan informasi tentang beberapa buku novel terkenal di Indonesia menggunakan struct dan array di dalam bahasa pemrograman C++
 
@@ -402,7 +403,7 @@ Dengan menggunakan program ini, pengguna dapat dengan mudah menghitung jumlah hu
 ### Output
 <img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
 
-
+<img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
 
 ## Kesimpulan
 
