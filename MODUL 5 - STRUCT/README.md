@@ -386,20 +386,36 @@ int main(){
 }
 ```
 
-### Penjelasan Program
-Kode program di atas merupakan program sederhana yang menghitung jumlah huruf vokal dalam sebuah kalimat dan mengembalikan indeks dari huruf vokal tersebut. Berikut ini penjelasan mengenai fungsi-fungsi dan bagian penting dari program yang digunakan yaitu:
+### Jawaban
+Deklarasi variabel struct Buku pada program tersebut adalah berjenis array dari tipe data string untuk atribut judul_buku, pengarang, dan penerbit, serta array dari tipe data int untuk atribut tebal_halaman dan array dari tipe data double untuk atribut harga_buku. Setiap elemen dari struct Buku memiliki array dengan panjang 5, yang menyimpan informasi mengenai buku-buku novel yang terkenal di Indonesia.
 
-1. **Fungsi `hitungHurufVokal`**: Fungsi ini digunakan untuk menghitung jumlah huruf vokal dalam sebuah kalimat dan mengembalikan vektor yang berisi indeks dari huruf vokal tersebut. Fungsi menerima parameter `kalimat` yang merupakan kalimat yang akan dihitung. Fungsi ini menggunakan string `vokal` yang berisi huruf vokal baik huruf kecil maupun huruf besar. Selanjutnya, fungsi melakukan iterasi melalui setiap karakter dalam kalimat dan memeriksa apakah karakter tersebut termasuk dalam huruf vokal. Jika ya, maka jumlah huruf vokal akan ditambahkan dan indeks karakter tersebut akan dimasukkan ke dalam vektor `indeksVokal`. Fungsi ini juga mencetak indeks huruf vokal yang digunakan dalam kalimat.
+**Mengisi Data ke dalam Vari BukuNovel**
+1) Menggunakan titik (.) untuk mengakses elemen dari struct BukuNovel.
+2) Mengisi data untuk setiap atribut dari buku, dengan menggunakan indeks array (0-4) pada setiap atribut.
+3) Contoh:
+   ```C++
+   BukuNovel.judul_buku[0]         = "Ayat-Ayat Cinta";
+   BukuNovel.pengarang[0]          = "Habiburrahman El Shirazy";
+   BukuNovel.penerbit[0]           = "Republika";
+   BukuNovel.tebal_halaman[0]      = 356;
+   BukuNovel.harga_buku[0]         = 80000;
+   ```
 
-2. **Fungsi `main`**: Pada fungsi `main`, program meminta pengguna untuk memasukkan sebuah kalimat. Selanjutnya, program memanggil fungsi `hitungHurufVokal` untuk menghitung jumlah huruf vokal dalam kalimat dan mendapatkan indeks huruf vokal. Hasil perhitungan jumlah huruf vokal kemudian ditampilkan ke layar.
+**Menampilkan Data dari Variabel `BukuNovel`**
+1) Menggunakan perulangan (`for` loop) untuk menampilkan setiap buku di variabel `BukuNovel`.
+2) Meng titik (.) untuk mengakses elemen dari structBukuNovel`.
+3) Contoh:
+   ```C++
+  for (int i=0; i<5; i++){
+      cout << "\n\tBuku Novel ke-" << i+1 << endl;
+      cout << "\tJudul Buku          : "      << BukuNovel.judul_buku[i] << endl;
+      cout << "\tPengarang           : "      << BukuNovel.pengarang[i] << endl;
+      cout << "\tPenerbit            : "      << BukuNovel.penerbit[i] << endl;
+      cout << "\tTebal Halaman       : "      << BukuNovel.tebal_halaman[i] << endl;
+      cout << "\tHarga Buku          : Rp "   << BukuNovel.harga_buku[i] << endl;
+  }
 
-3. **Penggunaan `std::vector`**: Vektor digunakan untuk menyimpan indeks dari huruf vokal yang ditemukan dalam kalimat. Vektor memungkinkan penyimpanan dinamis dari indeks-indeks tersebut.
-
-4. **Penggunaan `std::string::npos`**: Fungsi `std::string::npos` digunakan untuk mengecek apakah suatu karakter tidak ditemukan dalam string `vokal`. Jika karakter tidak ditemukan, maka nilai yang dikembalikan adalah `std::string::npos`.
-
-5. **Output**: Program akan mencetak pesan untuk meminta pengguna memasukkan kalimat. Setelah itu, program akan menampilkan indeks dari huruf vokal yang digunakan dalam kalimat beserta jumlah huruf vokal yang ditemukan.
-
-Dengan menggunakan program ini, pengguna dapat dengan mudah menghitung jumlah huruf vokal dalam sebuah kalimat dan melihat indeks dari huruf vokal tersebut. Program ini juga dapat dijadikan contoh penggunaan vektor untuk menyimpan indeks-indeks yang ditemukan selama proses perhitungan.
+Dengan cara ini, variabel struct BukuNovel diisi dengan data buku-buku novel dan kemudian ditampilkan menggunakan perulangan, sehingga informasi setiap buku dapat divisualisasikan di akhir program.
 
 ### Output
 <img width="777" alt="Screenshot 2024-04-25 231037" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/b41b0c71-2f4e-407f-b4c7-ac3ab7359885">
