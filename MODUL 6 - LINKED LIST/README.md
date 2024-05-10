@@ -891,9 +891,9 @@ Program di atas merupakan implementasi dari Double Linked List (senarai berantai
 Dengan menggunakan Double Linked List, program ini memberikan kemampuan untuk mengelola daftar produk dengan fleksibilitas yang lebih besar, termasuk kemampuan untuk menambah, menghapus, memperbarui, dan menampilkan data produk sesuai kebutuhan.  
 
 ### Output
-<img width="540" alt="Screenshot 2024-05-10 072801" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/a1b06852-a9a1-4ad0-a3b6-bbb1eef51995">
+<img width="340" alt="Screenshot 2024-05-10 072801" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/a1b06852-a9a1-4ad0-a3b6-bbb1eef51995">
 
-<img width="540" alt="Screenshot 2024-05-10 072832" src=" https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/4f0ec638-c374-4e13-8ea3-53240f30e409">
+<img width="340" alt="Screenshot 2024-05-10 072832" src=" https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/4f0ec638-c374-4e13-8ea3-53240f30e409">
 
 ## Kesimpulan
 Linked list adalah sebuah kumpulan node yang membentuk urutan linier yang elemen-elemen datanya menunjuk ke node berikutnya dengan menggunakan sebuah pointer, biasanya menggunakan 'next' ke node berikutnya dalam sebuah daftar. Terdapat beberapa jenis linked list, linked list non circular yaitu struktur data dinamis terdiri dari node-node yang saling terhubung dengan bantuan sebuah pointer, linked list circular yaitu struktur data yang terdiri dari elemen-elemen yang saling terhubung melalui pointer dan elemen terakhirnya mengarah kembali ke alemen pertama sehingga membentuk sebuah lingkaran, single linked list yaitu setiap node berisi sejumlah data yang hanya satu pointer mengarah pada node berikutnya, dan double linked list adalah struktur data linear terdiri dari node yang saling terhubung dan setiap node memiliki tiga elemen yaitu data, pointer prev, dan pointer next.
