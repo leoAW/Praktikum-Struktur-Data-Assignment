@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # <h1 align="center">Laporan Praktikum Modul Stack & Queue</h1>
 <p align="center">Leonardus Ananto Widodo</p>
 
