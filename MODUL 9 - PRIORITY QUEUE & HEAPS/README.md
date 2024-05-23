@@ -37,12 +37,17 @@ Hal ini karena urutan elemen dalam antrean prioritas ditentukan oleh nilai prior
 
 ### 2. Heaps 
 
-Heap adlah sebuah binary tree dengan ketentuan sebagai berikut [2]:
+Heap adalah sebuah binary tree dengan ketentuan sebagai berikut [2]:
 a. Tree harus complete binary tree
+
     - Semua level tree mempunyai level mempunyai simpul maksimum kecuali pada level terakhir.
+    
     - Pada level terakhir, node tersusun dari kiri ke kanan tanpa ada yang dilewati.
+    
 b. Perbandingan nilai suatu node dengan nilai node child-nya mempunyai ketentuan berdasarkan jenis heap, diantaranya yaitu:
+
     - Max Heap mempunyai ketentuan bahwa nilai suatu node lebih besar atau sama dengan dari nilai child-nya.
+    
     - Min Heap mempunyai ketentuan bahwa nilai suatu node lebih kecil atau sama dengan dari nilai child-nya.
 
 <img width="480" alt="Screenshot 2024-05-23 065434" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/34cc2a16-7484-48a2-b7df-94a53ef6ae5c">
