@@ -378,7 +378,7 @@ Program kemudian meminta pengguna untuk memasukkan jumlah elemen dalam heap dan 
 
 ## Kesimpulan
 
-priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan selalu lebih besar dari simpul-simpul lainnya. Heap dibagi menjadi dua yaitu heap maksimum dan heap minimum. Ada beberapa operasi pada heap heapify, find-max, insertion, deletion, dan extract min-max.
+Priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan selalu lebih besar dari simpul-simpul lainnya. Heap dibagi menjadi dua yaitu heap maksimum dan heap minimum. Ada beberapa operasi pada heap heapify, find-max, insertion, deletion, dan extract min-max.
 
 ## Referensi
 [1] Nurhadi, M. I., Saputra, R. E., and Setianingsih, C. "Manajemen Dan Kendali Beban Perangkat Elektronik Berbasis Web Dengan Algoritma Priority Queue." eProceedings of Engineering, vol. 8, no. 2, 2021.
