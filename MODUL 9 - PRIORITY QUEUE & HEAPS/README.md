@@ -44,11 +44,13 @@ a. Tree harus complete binary tree
 b. Perbandingan nilai suatu node dengan nilai node child-nya mempunyai ketentuan berdasarkan jenis heap, diantaranya yaitu:
     - Max Heap mempunyai ketentuan bahwa nilai suatu node lebih besar atau sama dengan dari nilai child-nya.
 
-<img width="580" alt="Screenshot 2024-05-23 065434" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/34cc2a16-7484-48a2-b7df-94a53ef6ae5c">
+<img width="480" alt="Screenshot 2024-05-23 065434" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/34cc2a16-7484-48a2-b7df-94a53ef6ae5c">
+
 
     - Min Heap mempunyai ketentuan bahwa nilai suatu node lebih kecil atau sama dengan dari nilai child-nya.
 
-<img width="580" alt="Screenshot 2024-05-23 065454" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/613fdb2b-ff70-4ac4-a693-5565da8198f4">
+
+<img width="480" alt="Screenshot 2024-05-23 065454" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/613fdb2b-ff70-4ac4-a693-5565da8198f4">
 
 **Heap dan Operasinya**
 contoh penggunaan heap adalah pada persoalan yang mempertahankan antrian prioritas (priority queue). Dlam antrian prioritas, elemen yang dihapus adalah elemen yang mempunyai prioritas terbesar (atau terkecil, tergantung keperluan) dan elemen inilah yang selalu terletak di akar (root). Suatu heap dapat sewaktu-waktu berubah baik itu dengan penambahan elemen (insert) dan penghapusan elemen (delete) [2].
