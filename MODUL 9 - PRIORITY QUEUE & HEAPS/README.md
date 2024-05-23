@@ -25,6 +25,7 @@ Selain itu terdapat dua operasi dasar yang digunakan untuk mengubah data pada al
 2) Pengurutan elemen dalam Priority Queue dilakukan secara dinamis. Elemen-elemen dalam antrean prioritas dapat diperbarui nilai prioritasnya, yang memungkinkan antrean untuk mengurutkan ulang secara dinamis saat prioritas berubah [3].
 3) Algoritma yang efisien dapat diimplementasikan. Antrean prioritas digunakan dalam banyak algoritme untuk meningkatkan efisiensinya, seperti algoritme Dijkstra untukmenemukan jalur terpendek dalam graf dan algoritme pencarian A* untuk pencarian jalur [3].
 4) Termasuk dalam sistem real-time. Hal ini karena antrean prioritas memungkinkan untuk mengambil elemen dengan prioritas tertinggi dengan cepat, antrean tersebut sering digunakan dalam sistem waktu nyata di mana waktu adalah hal yang sangat penting [3].
+   
 **Kekurangan Priority Queue**
 1. Kompleksitas tinggi
 Antrean prioritas lebih kompleks daripada struktur data sederhana seperti larik dan daftar tertaut, dan mungkin lebih sulit untuk diterapkan dan dipelihara [3].
@@ -38,6 +39,7 @@ Hal ini karena urutan elemen dalam antrean prioritas ditentukan oleh nilai prior
 ### 2. Heaps 
 
 Heap adalah sebuah binary tree dengan ketentuan sebagai berikut [2]:
+
 a. Tree harus complete binary tree
 
     - Semua level tree mempunyai level mempunyai simpul maksimum kecuali pada level terakhir.
