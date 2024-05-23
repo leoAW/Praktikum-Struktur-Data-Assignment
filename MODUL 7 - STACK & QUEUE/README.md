@@ -617,5 +617,4 @@ Queue memiliki beberapa operasi dasar diantaranya inisialisasi, Inqueue atau ins
 
 [2] E. Erkamim et al., Buku Ajar Algoritma dan Struktur Data. PT. Sonpedia Publishing Indonesia, 2024.
 
->>>>>>> e2eda1a (laprak 9 done)
 [3] R. M. S. Anita Sindar, Struktur Data Dan Algoritma Dengan C++, vol. 1. CV. AA. RIZKY, 2019.
