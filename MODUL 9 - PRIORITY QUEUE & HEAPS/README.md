@@ -25,6 +25,10 @@ Selain itu terdapat dua operasi dasar yang digunakan untuk mengubah data pada al
 2) Pengurutan elemen dalam Priority Queue dilakukan secara dinamis. Elemen-elemen dalam antrean prioritas dapat diperbarui nilai prioritasnya, yang memungkinkan antrean untuk mengurutkan ulang secara dinamis saat prioritas berubah [3].
 3) Algoritma yang efisien dapat diimplementasikan. Antrean prioritas digunakan dalam banyak algoritme untuk meningkatkan efisiensinya, seperti algoritme Dijkstra untukmenemukan jalur terpendek dalam graf dan algoritme pencarian A* untuk pencarian jalur [3].
 4) Termasuk dalam sistem real-time. Hal ini karena antrean prioritas memungkinkan untuk mengambil elemen dengan prioritas tertinggi dengan cepat, antrean tersebut sering digunakan dalam sistem waktu nyata di mana waktu adalah hal yang sangat penting [3].
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 65f8fb7cd88ed61b06739848a664ef302f5c3ff4
 **Kekurangan Priority Queue**
 1. Kompleksitas tinggi
 Antrean prioritas lebih kompleks daripada struktur data sederhana seperti larik dan daftar tertaut, dan mungkin lebih sulit untuk diterapkan dan dipelihara [3].
@@ -37,6 +41,7 @@ Hal ini karena urutan elemen dalam antrean prioritas ditentukan oleh nilai prior
 
 ### 2. Heaps 
 
+<<<<<<< HEAD
 Heap adlah sebuah binary tree dengan ketentuan sebagai berikut [2]:
 a. Tree harus complete binary tree
     - Semua level tree mempunyai level mempunyai simpul maksimum kecuali pada level terakhir.
@@ -51,6 +56,28 @@ b. Perbandingan nilai suatu node dengan nilai node child-nya mempunyai ketentuan
 <img width="580" alt="Screenshot 2024-05-23 065454" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/613fdb2b-ff70-4ac4-a693-5565da8198f4">
 
 **Heap dan Operasinya**
+=======
+Heap adalah sebuah binary tree dengan ketentuan sebagai berikut [2]:
+
+a. Tree harus complete binary tree
+
+    - Semua level tree mempunyai level mempunyai simpul maksimum kecuali pada level terakhir.
+    
+    - Pada level terakhir, node tersusun dari kiri ke kanan tanpa ada yang dilewati.
+    
+b. Perbandingan nilai suatu node dengan nilai node child-nya mempunyai ketentuan berdasarkan jenis heap, diantaranya yaitu:
+
+    - Max Heap mempunyai ketentuan bahwa nilai suatu node lebih besar atau sama dengan dari nilai child-nya.
+    
+    - Min Heap mempunyai ketentuan bahwa nilai suatu node lebih kecil atau sama dengan dari nilai child-nya.
+
+<img width="480" alt="Screenshot 2024-05-23 065434" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/34cc2a16-7484-48a2-b7df-94a53ef6ae5c">
+
+<img width="480" alt="Screenshot 2024-05-23 065454" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/613fdb2b-ff70-4ac4-a693-5565da8198f4">
+
+**Heap dan Operasinya**
+
+>>>>>>> 65f8fb7cd88ed61b06739848a664ef302f5c3ff4
 contoh penggunaan heap adalah pada persoalan yang mempertahankan antrian prioritas (priority queue). Dlam antrian prioritas, elemen yang dihapus adalah elemen yang mempunyai prioritas terbesar (atau terkecil, tergantung keperluan) dan elemen inilah yang selalu terletak di akar (root). Suatu heap dapat sewaktu-waktu berubah baik itu dengan penambahan elemen (insert) dan penghapusan elemen (delete) [2].
 
 Ada beberapa operasi yang dapat terjadi di sebuah heap, yaitu [2]:
@@ -378,11 +405,19 @@ Program kemudian meminta pengguna untuk memasukkan jumlah elemen dalam heap dan 
 
 ## Kesimpulan
 
+<<<<<<< HEAD
 priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan selalu lebih besar dari simpul-simpul lainnya. Heap dibagi menjadi dua yaitu heap maksimum dan heap minimum. Ada beberapa operasi pada heap heapify, find-max, insertion, deletion, dan extract min-max.
+=======
+Priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan selalu lebih besar dari simpul-simpul lainnya. Heap dibagi menjadi dua yaitu heap maksimum dan heap minimum. Ada beberapa operasi pada heap heapify, find-max, insertion, deletion, dan extract min-max.
+>>>>>>> 65f8fb7cd88ed61b06739848a664ef302f5c3ff4
 
 ## Referensi
 [1] Nurhadi, M. I., Saputra, R. E., and Setianingsih, C. "Manajemen Dan Kendali Beban Perangkat Elektronik Berbasis Web Dengan Algoritma Priority Queue." eProceedings of Engineering, vol. 8, no. 2, 2021.
 
 [2] Heryandi, A. "Bab XI - Heap.pdf." [Online]. Available: https://repository.unikom.ac.id/33061/1/Bab%20XI%20-%20Heap.pdf. [Accessed: 2010].
 
+<<<<<<< HEAD
 [3] "Makalah Priority Queue revisi." [Online]. Available: https://www.scribd.com/document/657230171/Makalah-Priority-Queue-revisi. [Accessed: Date Accessed].
+=======
+[3] "Makalah Priority Queue revisi." [Online]. Available: https://www.scribd.com/document/657230171/Makalah-Priority-Queue-revisi. [Accessed: Date Accessed].
+>>>>>>> 65f8fb7cd88ed61b06739848a664ef302f5c3ff4
