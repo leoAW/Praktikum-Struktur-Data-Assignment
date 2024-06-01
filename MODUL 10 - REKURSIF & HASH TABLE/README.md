@@ -30,18 +30,21 @@ Selain itu, rekursif juga memiliki kelebihan dan kekurangan diantaranya yaitu:
 - Kesulitan dalam Pemahaman: Untuk beberapa programmer, rekursif bisa lebih sulit dipahami dan debug dibandingkan dengan iterasi, terutama jika rekursinya kompleks [3].
 
 **Alokasi Memori dalam Rekursif**
+
 	Call Stack: Setiap pemanggilan fungsi menambahkan frame baru ke call stack. Frame ini berisi informasi seperti parameter fungsi, variabel lokal, dan alamat pengembalian [2].
 
 	Stack Overflow: Jika rekursi terlalu dalam (misalnya, tidak ada kondisi basis yang cukup kuat atau input yang sangat besar), call stack bisa penuh, menyebabkan stack overflow [2].
 
 	Efisiensi Memori: Rekursif yang tidak dioptimalkan bisa menghabiskan banyak memori, terutama jika ada banyak frame yang ditumpuk di call stack. Beberapa bahasa pemrograman dan compiler mendukung optimisasi tail-call untuk mengurangi penggunaan memori pada rekursif tail-call [2].
 
-# 2. Hash Table**
+# 2. Hash Table
 
 Hash table (atau hash map) adalah struktur data yang digunakan untuk menyimpan pasangan kunci-nilai (key-value pairs) secara efisien. Hash table adalah sebuah array atau daftar di mana setiap indeks atau posisi dalam array diakses melalui nilai kunci (key). Untuk mengakses elemen di hash table, kunci tersebut dipetakan ke indeks dalam array menggunakan fungsi hash. Fungsi hash mengubah kunci menjadi indeks array, sehingga memungkinkan akses langsung ke nilai yang diinginkan. Hash table memungkinkan pencarian, penyisipan, dan penghapusan elemen dengan waktu rata-rata yang sangat cepat, umumnya O(1). Fungsi hash yang baik memiliki sifat yaitu mudah dihitung, cukup mampu mendistribusikan key, meminimalkan jumlah collision (tabrakan) yang terjadi [5]. Fungsi hash dapat menggunakan beberapa teknik, diantaranya yaitu [5]:
 
 a. Truncation   : Mengambil beberapa digit dari key sebagai indeks
+
 b. Folding      : Menjumlahkan beberapa digit dari key, hasil penjumlahan sebagai indeks
+
 c. Modular      : Menggunakan sisa hasil bagi dari key (bilangan bulat) dengan ukuran hash table.
 
 Berikut ini operasi yang terdapat pada hash table diantaranya yaitu:
@@ -52,8 +55,8 @@ Berikut ini operasi yang terdapat pada hash table diantaranya yaitu:
 Berdasarkan teknik untuk menangani collision, hash table dapat dikategorikan menjadi Closed Hashing (Open Addressing) dan Open hashing (Separate Chaining). Collision sendiri terjadi ketika terdapat dua key/lebih yang dipetakkan pada sebuah sel array yang sama [5].
 
 1) Closed Hashing (Open Addressing)
-
-Close hashing menyelesaikan collision dengan menggunakan memori yang masih ada tanpa menggunakan memori di luar array yang dipakai. Closed hashing mencari alamat lain apabila alamat yang akan dituju sudah terisi oleh data. Terdapat tiga cara untuk mencari alamat lain tersebut, yaitu linear probing, quadratic probing, dan double hashing [6].
+   
+    Close hashing menyelesaikan collision dengan menggunakan memori yang masih ada tanpa menggunakan memori di luar array yang dipakai. Closed hashing mencari alamat lain apabila alamat yang akan dituju sudah terisi oleh data. Terdapat tiga cara untuk mencari alamat lain tersebut, yaitu linear probing, quadratic probing, dan double hashing [6].
 
 a. Linier probing: Jika terjadi collision, pencarian dilakukan secara linier ke indeks berikutnya hingga menemukan slot kosong [5]. Apabila telah terisi, linear probing mencari alamat lain dengan bergeser satu indeks dari alamat sebelumnya hingga ditemukan alamat yang belum terisi data, dengan rumus sebagai berikut:
 
@@ -68,7 +71,6 @@ dengan menggunakan hash function lagi. Hash function kedua yang digunakan setela
    
    Pada dasarnya, open hashing atau separate chaining membuat tabel yang digunakan untuk proses hashing menjadi
 sebuah array of pointer yang masing-masing pointernya diikuti oleh sebuah linked list, dengan chain (mata rantai) 1 terletak pada array of pointer, sedangkan chain 2 dan seterusnya berhubungan dengan chain 1 secara memanjang. Kelemahan metode ini yaitu terjadi linked list yang panjang apabila data menumpuk pada satu atau sedikit indeks [6].  Pada teknik ini, permasalahan collision diselesaikan dengan menambah seluruh elemen yang memiliki nilai sama pada sebuah sel. Hal ini dilakukan dengan cara menyediakan sebuah linked list untuk setiap elemen yang memiliki nilai hash yang sama. Tiap sel pada hash table memiliki sebuah lisked list yang berisi data/elemen [5].
-
 
 ## Guided 
 
@@ -533,7 +535,10 @@ Oleh karena itu, dengan adanya fungsi-fungsi diatas menyebabkan program dapat me
 <img width="778" alt="Screenshot 2024-05-31 224938" src= "https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/349f6a0d-48b4-4e73-9d8e-ea276d5f97ae">
 
 ## Kesimpulan
+
 Rekursif adalah proses sebuah fungsi yang memanggil dirinya sendiri dengan cara rekursif langsung atau rekursif tidak langsung. Rekursif langsung merupakan fungsi yang memanggil dirinya sendiri secara langsung atau tidak langsung memanggil dirinya sendiri, sedangkan rekursif tidak langsung merupakan fungsi yang memanggil fungsi lain dengan cara memanggil fungsi rekursif lain, bukan fungsi itu sendiri. Kekurangan dari rekursif adalah setiap programnya memiliki persyaratan ruang yang lebih besar dan memiliki persyaratan yang lebih besar juga, rekursif seringkali berhenti, memakan memori lebih besar. Kelebihan dari rekursif adalah rekursi menyediakan cara yang bersih dan sederhaan dalam penulisan kode program, beberapa masalah dianjurkan untuk menggunakan rekursif dalam penyelesaiannya, program lebih singkat dan efisien secara iteratif. Alokasi memori untuk rekursif adalah di atas memori yang dialokasikan untuk fungsi pemanggil dan salinan variabel lokal yang berbeda dibuat untuk setiap panggilan fungsi, ketika base case tercapai, fungsi mengembalikan nilainya ke fungsi yang memanggil, dilanjutkan dengan melepas memori dan proses pun berlanjut.
+
+Hash table (atau hash map) adalah struktur data yang efisien untuk menyimpan pasangan kunci-nilai. Setiap indeks diakses melalui nilai kunci dengan bantuan fungsi hash yang mengubah kunci menjadi indeks array. Operasi pada hash table meliputi penyisipan, pencarian, dan penghapusan dengan waktu rata-rata cepat (O(1)). Collision, di mana dua atau lebih key dipetakkan ke sel array yang sama, diatasi dengan metode Closed Hashing (Open Addressing) dan Open Hashing (Separate Chaining). Closed Hashing menyelesaikan collision tanpa menggunakan memori di luar array dengan teknik seperti linear probing, quadratic probing, dan double hashing. Open Hashing, dengan metode Separate Chaining, mengatasi collision dengan menggunakan array of pointer yang mengarah pada linked list untuk setiap slot pada hash table.
 
 ## Referensi
 
