@@ -318,7 +318,7 @@ Program di atas merupakan implementasi fungsi rekursif untuk menghitung faktoria
 Oleh karena itu penggunaan rekursi pada program di atas dapat menghitung faktorial dari bilangan bulat positif yang dimasukkan oleh pengguna. Jika pengguna memasukkan bilangan negatif, program memberikan pesan kesalahan bahwa input tidak valid dan meminta untuk memasukkan bilangan bulat positif. Jika pengguna memasukkan bilangan bulat positif, program akan mencetak hasil faktorialnya ke layar.
 
 #### Output:
-<img width="694" alt="Screenshot 2024-05-31 222846" src=" https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/44fae205-d25f-4258-9f6f-0fccb0fa7bf1">
+<img width="694" alt="Screenshot 2024-05-31 222846" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/44fae205-d25f-4258-9f6f-0fccb0fa7bf1">
 
 ### 2. Buatlah versi program Rekursif Tidak Langsung (Indirect Recursion) dari soal nomor 1 di atas!
 
@@ -379,7 +379,7 @@ Program di atas merupakan implementasi fungsi rekursif untuk menghitung faktoria
 Dalam program implementasi rekursif ini, kedua fungsi saling memanggil satu sama lain untuk menghitung faktorial dari bilangan bulat positif yang dimasukkan oleh pengguna. Proses rekursi antara fungsi A dan fungsi B terjadi secara bergantian, di mana fungsi A memanggil fungsi B untuk menghitung faktorial saat kondisi fungsi A tidak bersifat basis, dan sebaliknya fungsi B memanggil fungsi A. Proses ini tetap akan berakhir saat basis kasus tercapai (yaitu nilai `n` sama dengan 0 atau 1).
 
 ### Output
-<img width="777" alt="Screenshot 2024-05-31 223713" src=" https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/644c9579-f1af-4acf-a621-6df54da6459c"> 
+<img width="777" alt="Screenshot 2024-05-31 223713" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/644c9579-f1af-4acf-a621-6df54da6459c"> 
 
 ### 3. Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai. Dengan ketentuan :
 ### a. Setiap mahasiswa memiliki NIM dan nilai.
