@@ -5,35 +5,41 @@
 
 # 1. Rekursif
 
-Rekursif adalah proses dimana fungsi memanggil dirinya sendiri secara langsung atau tidak langsung [1]. Fungsi rekursif adalah fungsi dari suatu proses yang memanggil dirinya sendiri artinya fungsi tersebut dipanggil didalam tubuh fungsi itu sendiri [2]. Dalam rekursif sebenarnya terkandung pengertian prosedur atau fungsi. Perbedaannya adalah bahwa rekursif bisa memanggil ke dirinya sendiri, tetapi prosedur atau fungsi harus dipanggil lewat pemanggil prosedur atau fungsi. Pemanggilan prosedur atau fungsi ke dirinya sendiri bisa berarti proses yang berulang yang tidak bisa diketahui kapan akan berakhir [2]. Dalam sebuah fungsi rekursif pemanggilan dapat terjadi berulang kali karena ada proses yang berulang-ulang maka harus ada suatu kondisi yang mengakhiri prosesnya. Jika tidak, maka proses tidak akan pernah berhenti sampai memori yang digunakan tidak dapat menampung lagi [3].
+Rekursif adalah proses dimana fungsi memanggil dirinya sendiri secara langsung atau tidak langsung [1]. Fungsi rekursif adalah fungsi dari suatu proses yang memanggil dirinya sendiri artinya fungsi tersebut dipanggil didalam tubuh fungsi itu sendiri [3]. Rekursif umumnya  dipakai  untuk permasalahan yang memiliki langkah penyelesaian yang terpola atau langkah-langkah  yang  teratur [4].  Bila  ada  suatu  permasalahan  dan sudah   diketahui   algoritma   penyelesaiannya,   maka   sub   program rekursif dapat menjadi pilihan untuk digunakan [4].  Dalam rekursif sebenarnya terkandung pengertian prosedur atau fungsi. Perbedaannya adalah bahwa rekursif bisa memanggil ke dirinya sendiri, tetapi prosedur atau fungsi harus dipanggil lewat pemanggil prosedur atau fungsi. Pemanggilan prosedur atau fungsi ke dirinya sendiri bisa berarti proses yang berulang yang tidak bisa diketahui kapan akan berakhir [2]. Dalam sebuah fungsi rekursif pemanggilan dapat terjadi berulang kali karena ada proses yang berulang-ulang maka harus ada suatu kondisi yang mengakhiri prosesnya. Jika tidak, maka proses tidak akan pernah berhenti sampai memori yang digunakan tidak dapat menampung lagi [3]. Konsep ini dapat digunakan untuk merumuskan solusi sederhana dalam sebuah permasalahan yang sulit untuk diselesaikan secara iteratif dengan menggunakan loop for, while, do-while. Pada saat tertentu konsep ini dapat digunakan untuk mendefinisikan permasalahan dengan konsisten dan sederhana [5].
 
 Berikut ini merupakan jenis-jenis rekursif diantaranya yaitu:
+
 a.	Rekursif langsung (Direct Recursion)
-Rekursif langsung terjadi ketika sebuah fungsi memanggil dirinya sendiri secara langsung. Contoh klasik dari rekursif langsung adalah perhitungan faktorial dari sebuah bilangan.
+Rekursif langsung terjadi ketika sebuah fungsi memanggil dirinya sendiri secara langsung. Contoh klasik dari rekursif langsung adalah perhitungan faktorial dari sebuah bilangan [4].
+
 b.	Rekursif tidak langsung
-Rekursif tidak langsung terjadi ketika sebuah fungsi memanggil fungsi lain, yang kemudian memanggil fungsi asli. Contohnya adalah dua fungsi yang saling memanggil.
+Rekursif tidak langsung terjadi ketika sebuah fungsi memanggil fungsi lain, yang kemudian memanggil fungsi asli. Contohnya adalah dua fungsi yang saling memanggil [4].
 
 Selain itu, rekursif juga memiliki kelebihan dan kekurangan diantaranya yaitu:
 
 **Kelebihan Rekursif**
-- Kesederhanaan dan Keterbacaan: Rekursif seringkali menghasilkan solusi yang lebih sederhana dan lebih mudah dipahami untuk masalah-masalah yang memiliki sifat berulang, seperti pohon biner dan algoritma pembagian dan penaklukan (divide and conquer).
-- Pemecahan Masalah yang Alami: Rekursif dapat menangani masalah yang secara alami memiliki struktur rekursif, seperti traversal pohon dan graf.
-- Pemrograman Fungsional: Rekursif sering digunakan dalam bahasa pemrograman fungsional di mana perulangan eksplisit kurang umum.
+
+- Kesederhanaan dan Keterbacaan: Rekursif seringkali menghasilkan solusi yang lebih sederhana dan lebih mudah dipahami untuk masalah-masalah yang memiliki sifat berulang, seperti pohon biner dan algoritma pembagian dan penaklukan (divide and conquer) [3].
+- Pemecahan Masalah yang Alami: Rekursif dapat menangani masalah yang secara alami memiliki struktur rekursif, seperti traversal pohon dan graf [3].
+- Pemrograman Fungsional: Rekursif sering digunakan dalam bahasa pemrograman fungsional di mana perulangan eksplisit kurang umum [3].
  
 **Kekurangan Rekursif**
 
-- Kinerja: Rekursif dapat memiliki kinerja yang lebih buruk dibandingkan dengan iterasi karena overhead pemanggilan fungsi berulang kali. 
-- Penggunaan Memori: Rekursif menggunakan lebih banyak memori karena setiap pemanggilan fungsi harus disimpan dalam stack, yang dapat menyebabkan stack overflow jika kedalaman rekursi terlalu besar.
-- Kesulitan dalam Pemahaman: Untuk beberapa programmer, rekursif bisa lebih sulit dipahami dan debug dibandingkan dengan iterasi, terutama jika rekursinya kompleks.
+- Kinerja: Rekursif dapat memiliki kinerja yang lebih buruk dibandingkan dengan iterasi karena overhead pemanggilan fungsi berulang kali [3]. 
+- Penggunaan Memori: Rekursif menggunakan lebih banyak memori karena setiap pemanggilan fungsi harus disimpan dalam stack, yang dapat menyebabkan stack overflow jika kedalaman rekursi terlalu besar [3].
+- Kesulitan dalam Pemahaman: Untuk beberapa programmer, rekursif bisa lebih sulit dipahami dan debug dibandingkan dengan iterasi, terutama jika rekursinya kompleks [3].
 
 **Alokasi Memori dalam Rekursif**
-	Call Stack: Setiap pemanggilan fungsi menambahkan frame baru ke call stack. Frame ini berisi informasi seperti parameter fungsi, variabel lokal, dan alamat pengembalian.
-	Stack Overflow: Jika rekursi terlalu dalam (misalnya, tidak ada kondisi basis yang cukup kuat atau input yang sangat besar), call stack bisa penuh, menyebabkan stack overflow.
-	Efisiensi Memori: Rekursif yang tidak dioptimalkan bisa menghabiskan banyak memori, terutama jika ada banyak frame yang ditumpuk di call stack. Beberapa bahasa pemrograman dan compiler mendukung optimisasi tail-call untuk mengurangi penggunaan memori pada rekursif tail-call.
+	Call Stack: Setiap pemanggilan fungsi menambahkan frame baru ke call stack. Frame ini berisi informasi seperti parameter fungsi, variabel lokal, dan alamat pengembalian [2].
+
+	Stack Overflow: Jika rekursi terlalu dalam (misalnya, tidak ada kondisi basis yang cukup kuat atau input yang sangat besar), call stack bisa penuh, menyebabkan stack overflow [2].
+
+	Efisiensi Memori: Rekursif yang tidak dioptimalkan bisa menghabiskan banyak memori, terutama jika ada banyak frame yang ditumpuk di call stack. Beberapa bahasa pemrograman dan compiler mendukung optimisasi tail-call untuk mengurangi penggunaan memori pada rekursif tail-call [2].
 
 # 2. Hash Table**
 
 Hash table (atau hash map) adalah struktur data yang digunakan untuk menyimpan pasangan kunci-nilai (key-value pairs) secara efisien. Hash table adalah sebuah array atau daftar di mana setiap indeks atau posisi dalam array diakses melalui nilai kunci (key). Untuk mengakses elemen di hash table, kunci tersebut dipetakan ke indeks dalam array menggunakan fungsi hash. Fungsi hash mengubah kunci menjadi indeks array, sehingga memungkinkan akses langsung ke nilai yang diinginkan. Hash table memungkinkan pencarian, penyisipan, dan penghapusan elemen dengan waktu rata-rata yang sangat cepat, umumnya O(1). Fungsi hash yang baik memiliki sifat yaitu mudah dihitung, cukup mampu mendistribusikan key, meminimalkan jumlah collision (tabrakan) yang terjadi [5]. Fungsi hash dapat menggunakan beberapa teknik, diantaranya yaitu [5]:
+
 a. Truncation   : Mengambil beberapa digit dari key sebagai indeks
 b. Folding      : Menjumlahkan beberapa digit dari key, hasil penjumlahan sebagai indeks
 c. Modular      : Menggunakan sisa hasil bagi dari key (bilangan bulat) dengan ukuran hash table.
@@ -47,16 +53,21 @@ Berdasarkan teknik untuk menangani collision, hash table dapat dikategorikan men
 
 1) Closed Hashing (Open Addressing)
 
-Ide dari teknik ini adalah mencari alternative sel lain pada table ketika terjadi collision. Pada proses insertion, ketika indeks yang telah ditentukan dari Fungsi hash yang digunakan sudah berisi suatu item, maka akan mencari sel lain sesuai urutan menggunakan fungsi pencarian urutan. Beberapa startegi untuk menentukan fungsi pencarian urutan, yaitu [5]:
+Close hashing menyelesaikan collision dengan menggunakan memori yang masih ada tanpa menggunakan memori di luar array yang dipakai. Closed hashing mencari alamat lain apabila alamat yang akan dituju sudah terisi oleh data. Terdapat tiga cara untuk mencari alamat lain tersebut, yaitu linear probing, quadratic probing, dan double hashing [6].
 
-a. Linier probing: Jika terjadi collision, pencarian dilakukan secara linier ke indeks berikutnya hingga menemukan slot kosong.
+a. Linier probing: Jika terjadi collision, pencarian dilakukan secara linier ke indeks berikutnya hingga menemukan slot kosong [5]. Apabila telah terisi, linear probing mencari alamat lain dengan bergeser satu indeks dari alamat sebelumnya hingga ditemukan alamat yang belum terisi data, dengan rumus sebagai berikut:
 
-b. Quadratic probing: Pencarian dilakukan dengan jarak kuadrat (i^2) dari indeks asal.
+   **Rx = (h+1) mod m**
 
-c. Double hashing: Menggunakan fungsi hash kedua jika terjadi collision untuk menentukan langkah pencarian berikutnya.
+b. Quadratic probing: Quadratic probing mencari alamat baru untuk ditempati dengan proses perhitungan kuadratik yang lebih kompleks. Tidak ada formula baku pada quadratic probing [6]. Pencarian dapat dilakukan dengan jarak kuadrat (i^2) dari indeks asal [5].
+
+c. Double hashing: Sesuai dengan namanya, alamat baru untuk menyimpan data yang belum dapat masuk ke dalam tabel diperoleh
+dengan menggunakan hash function lagi. Hash function kedua yang digunakan setelah alamat yang dihasilkan oleh hash function awal telah terisi tentu saja berbeda dengan hash function awal itu sendiri [6]. Metode closed hashing memiliki kelemahan yaitu ukuran array yang disediakan harus lebih besar dari jumlah data. Selain itu, dibutuhkan memori yang lebih besar untuk meminimalkan collision [6]. Intinya, Pada metode ini, kunci yang diketahui bisa dipecah menjadi beberapa kelompok. Pemecahan dan penjumlahan terus dilakukan jika keseluruhan kelompok yang ada masih lebih besar dari banyaknya alamat yang akan dipakai [6].
 
 2) Open hashing (Separate Chaining)
-Pada teknik ini, permasalahan collision diselesaikan dengan menambah seluruh elemen yang memiliki nilai sama pada sebuah sel. Hal ini dilakukan dengan cara menyediakan sebuah linked list untuk setiap elemen yang memiliki nilai hash yang sama. Tiap sel pada hash table memiliki sebuah lisked list yang berisi data/elemen [5].
+   
+   Pada dasarnya, open hashing atau separate chaining membuat tabel yang digunakan untuk proses hashing menjadi
+sebuah array of pointer yang masing-masing pointernya diikuti oleh sebuah linked list, dengan chain (mata rantai) 1 terletak pada array of pointer, sedangkan chain 2 dan seterusnya berhubungan dengan chain 1 secara memanjang. Kelemahan metode ini yaitu terjadi linked list yang panjang apabila data menumpuk pada satu atau sedikit indeks [6].  Pada teknik ini, permasalahan collision diselesaikan dengan menambah seluruh elemen yang memiliki nilai sama pada sebuah sel. Hal ini dilakukan dengan cara menyediakan sebuah linked list untuk setiap elemen yang memiliki nilai hash yang sama. Tiap sel pada hash table memiliki sebuah lisked list yang berisi data/elemen [5].
 
 
 ## Guided 
@@ -525,12 +536,15 @@ Oleh karena itu, dengan adanya fungsi-fungsi diatas menyebabkan program dapat me
 Rekursif adalah proses sebuah fungsi yang memanggil dirinya sendiri dengan cara rekursif langsung atau rekursif tidak langsung. Rekursif langsung merupakan fungsi yang memanggil dirinya sendiri secara langsung atau tidak langsung memanggil dirinya sendiri, sedangkan rekursif tidak langsung merupakan fungsi yang memanggil fungsi lain dengan cara memanggil fungsi rekursif lain, bukan fungsi itu sendiri. Kekurangan dari rekursif adalah setiap programnya memiliki persyaratan ruang yang lebih besar dan memiliki persyaratan yang lebih besar juga, rekursif seringkali berhenti, memakan memori lebih besar. Kelebihan dari rekursif adalah rekursi menyediakan cara yang bersih dan sederhaan dalam penulisan kode program, beberapa masalah dianjurkan untuk menggunakan rekursif dalam penyelesaiannya, program lebih singkat dan efisien secara iteratif. Alokasi memori untuk rekursif adalah di atas memori yang dialokasikan untuk fungsi pemanggil dan salinan variabel lokal yang berbeda dibuat untuk setiap panggilan fungsi, ketika base case tercapai, fungsi mengembalikan nilainya ke fungsi yang memanggil, dilanjutkan dengan melepas memori dan proses pun berlanjut.
 
 ## Referensi
-[1] Oematan, M. Zusane. Pengenalan C/C++. Indonesia: Unikom.ac.id: 2010.
 
-[2] MTD Putra, D Pradeka, AR Yuniarti. Belajar Dasar Pemrograman C++. Indonesia: penerbitwidina.com: 2022.
+[1] S. Hanief, I. W. Jepriana, dan S. Kom. Kom, "Konsep Algoritme dan Aplikasinya dalam Bahasa Pemrograman C++," Penerbit Andi, 2020.
 
-[3] Ma'Arif, Alfian. Buku Ajar Dasar Pemrograman C++. Yogyakarta: UAD Press: 2020.
+[2] R. M. S. Anita Sindar, "Struktur Data Dan Algoritma Dengan C++ (Vol. 1)," CV. AA. RIZKY, 2019.
 
-[4] Faradiba. PENGGUNAAN APLIKASI VISUAL C++ UNTUK PEMROGRAMAN KOMPUTER. Jakarta: 2019.
+[3] S.Kom. Painem, M.Kom, Reva Ragam, S.Kom., M.Kom, dan Moch. Sjukani. "MODUL PERKULIAHAN 13 FUNGSI REKURSIF.FAKULTAS TEKNOLOGI INFORMASI UNIVERSITAS BUDI LUHUR Jakarta," 2019.
 
-[5] Maulida, Anisa Fitri. dibimbing.id. https://dibimbing.id/blog/detail/seperti-apa-tipe-data-primitif, accessed 12 November  2023. 
+[4] U. Indahyanti & Y. Rahmawati, "Buku Ajar Algoritma Dan Pemrograman Dalam Bahasa C++," Umsida Press, 2020.
+
+[5] K. F. H. Holle, "Modul praktikum struktur data," 2022.
+   
+[6] A. Mulyana, "E-Books Cara Mudah Mempelajari Algoritma dan Struktur Data," 2023.
