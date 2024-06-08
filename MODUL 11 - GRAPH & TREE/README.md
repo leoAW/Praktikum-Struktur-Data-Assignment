@@ -10,6 +10,7 @@ Graph adalah struktur data yang berbentuk network/jaringan yang menghubungkan an
 **Jenis-Jenis Graph**
 
 1) Directed Graph (Graf berarah)
+   
     Graf yang setiap sisinya diberikan orientasi arah [2]. Misalnya : {x,y} yaitu arah x ke y, bukan dari y ke x; x disebut origin dan y disebut terminus. Secara notasi sisi digraph ditulis sebagai vektor (x, y) [1].
     Contoh Digraph G = {V, E} :
     V = {A, B, C, D, E, F, G, H, I,J, K, L, M}
@@ -18,6 +19,7 @@ Graph adalah struktur data yang berbentuk network/jaringan yang menghubungkan an
 <img width="380" alt="Screenshot 2024-06-08 063157" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/cf319dbf-6ef6-4f88-904a-9a16722ff388">
 
 2) Undirected Graph (Graf Tak Berarah)
+   
     Graf yang sisinya tidak mempunyai orientasi arah [2]. Misalnya setiap sisi {x, y} berlaku pada kedua arah: baik x ke y maupun y ke x. Secara grafis sisi pada undigraph tidak memiliki mata panah dan secara notasional menggunakan kurung kurawal [1].
     Contoh Undigraph G = {V, E}
     V = {A, B, C, D, E, F, G, H, I,J, K, L, M}
@@ -28,6 +30,7 @@ Graph adalah struktur data yang berbentuk network/jaringan yang menghubungkan an
 <img width="380" alt="Screenshot 2024-06-08 063355" src="https://github.com/leoAW/Praktikum-Struktur-Data-Assignment/assets/160736794/edc6349e-e072-4da4-abf0-2cd4e984ca49">
 
 3) Weight Graph (Graf Berbobot)
+   
     Graph dengan sisi mempunyai Bobot/ Biaya. “Biaya" ini bisa mewakili banyak aspek biaya ekonomi suatu aktifitas, jarak geografis /tempuh, waktu tempuh, tingkat kesulitan, dan lain sebagainya [1]. 
     Contoh:
     Graph ini merupakan Undirected Weighted Graph. Order dari verteks A = 4, verteks B = 3, dst. Adjacentcy list dari D adalah = {A,E,F,G,K,L} [1].
